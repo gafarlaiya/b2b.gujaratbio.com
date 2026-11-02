@@ -453,7 +453,7 @@ document.querySelectorAll('.nav button').forEach(function(t){t.onclick=function(
 function card(l){
   var ph=digits(l.phone);
   var sub=[[l.crop||l.interest||l.grades,l.acreage].filter(Boolean).join(', '),[l.village,l.district||l.state].filter(Boolean).join(', ')||(l.country&&l.country!=='India'?l.country:'')].filter(Boolean).join(' - ')||(l.message?l.message.slice(0,80):'')||nice(l.phone);
-  var tags='<span class="tag'+(l.stage==='New'?' blue':l.stage==='Lost'?' grey':'')+'">'+esc(l.stage)+'</span>';
+  var tags='<span class="tag'+(l.stage==='New'?' blue':l.stage==='Lost'?' grey':'')+'">'+esc(l.stage)+'</span>';if(isB2B(l))tags+='<span class="tag" style="background:#fff3d6;color:#8a5a00">B2B</span>';
   if(missedOpen(l))tags+='<span class="tag red">Missed call '+esc(rel(l.last_call_at))+'</span>';
   var fu=fuText(l.next_followup);if(fu&&isOpen(l)){var n=dayDiff(l.next_followup);tags+='<span class="tag '+(n<0?'red':n===0?'amber':'grey')+'">Follow-up: '+esc(fu)+'</span>'}
   tags+='<span class="tag grey">'+esc(srcOf(l))+'</span>';
@@ -472,12 +472,14 @@ function bindCards(root){
 function vToday(){
   var L=S.leads,used={};
   function take(f){return L.filter(function(l){if(used[l.id]||!f(l))return false;used[l.id]=1;return true})}
+  var b2b=take(function(l){return isB2B(l)&&isOpen(l)}).sort(function(a,b){return String(a.next_followup||'9').localeCompare(String(b.next_followup||'9'))});
   var missed=take(missedOpen);
   var due=take(dueOpen).sort(function(a,b){return String(a.next_followup).localeCompare(String(b.next_followup))});
   var fresh=take(function(l){return l.stage==='New'});
   var hot=take(function(l){return l.priority==='Hot'&&isOpen(l)});
   var o='';
   function sec(t,hint,a){if(!a.length)return '';return '<div class="sec"><h2>'+t+'</h2><span class="n">'+a.length+'</span><span class="hint">'+hint+'</span></div><div class="list">'+a.slice(0,40).map(card).join('')+'</div>'+(a.length>40?'<p class="hint" style="text-align:center;color:var(--faint)">Showing 40 of '+a.length+'. See All leads for the rest.</p>':'')}
+  o+=sec('Business buyers (B2B)','Dealers, distributors, OEM, export - bigger orders, handle first',b2b);
   o+=sec('Missed calls','Call back first',missed);
   o+=sec('Follow-ups due','Oldest first',due);
   o+=sec('New leads','Not contacted yet',fresh);
@@ -610,6 +612,49 @@ async function upd(l,body,msg){
   finally{keepDraft=true}
 }
 
+
+/* Before a lead is marked Qualified or Won, make sure Meta will get the right signal:
+   lead type (farmer or which kind of business), crop for farmers, and the sale amount on Won. */
+var QUAL_STAGES=['Qualified','Sample sent','Quote sent','Negotiation','Won'];
+var PTYPES=['Farmer','Dealer / retailer','Distributor','OEM / private label','Exporter / importer','Company / institution'];
+var B2B_PT=/dealer|retailer|distribut|oem|private|export|import|company|institution/i;
+var DEFAULT_WON=4020;
+function isB2B(l){return B2B_PT.test(l.person_type||'')||/b2b\./i.test(l.site||'')||/dealer|distribut|oem|private.?label|export|import|wholesale|custom formulation/i.test([l.form,l.interest].join(' '))}
+function guessType(l){if(l.person_type)return l.person_type;var t=[l.form,l.interest,l.site].join(' ');if(/distribut/i.test(t))return 'Distributor';if(/dealer|where to buy/i.test(t))return 'Dealer / retailer';if(/oem|private.?label|custom formulation/i.test(t))return 'OEM / private label';if(/export|import/i.test(t))return 'Exporter / importer';if(/b2b\./i.test(l.site||''))return '';return l.site==='whatsapp'||l.site==='telecall'||/farmer/i.test(t)?'Farmer':''}
+function hasWonQuote(l){return S.quotes.some(function(q){return q.lead_id===l.id&&+q.value>0})}
+function needsGate(l,st){if(QUAL_STAGES.indexOf(st)<0)return false;if(!l.person_type)return true;if(!isB2B(l)&&!l.crop)return true;if(st==='Won'&&!hasWonQuote(l))return true;return false}
+function gate(l,st){
+  var g=$('gate');if(!g)return;
+  var pt=guessType(l),known=CROPS.concat(cropsInData()).filter(function(x,i,a){return a.indexOf(x)===i});
+  g.innerHTML='<div class="box" style="margin-top:.7rem;border-color:#e6c97a;background:#fffbea">'
+   +'<b>Before moving to '+esc(st)+'</b><div style="font-size:.85rem;color:var(--mut);margin:.2rem 0 .6rem">This tells Meta which ads bring real '+(st==='Won'?'sales':'buyers')+'.</div>'
+   +'<label style="font-weight:600">Who is this?</label><div class="seg" id="g_pt" style="margin:.3rem 0 .7rem">'+PTYPES.map(function(x){return '<button data-v="'+esc(x)+'" aria-pressed="'+(pt===x)+'">'+esc(x)+'</button>'}).join('')+'</div>'
+   +'<div id="g_cropw"><label for="g_crop" style="font-weight:600" id="g_cropl">Crop</label><select id="g_crop"><option value="">Choose crop</option>'+known.map(function(x){return '<option'+((l.crop||'').toLowerCase()===x.toLowerCase()?' selected':'')+'>'+esc(x)+'</option>'}).join('')+'<option value="__other">Other crop...</option></select><input id="g_crop2" class="hide" style="margin-top:.4rem" placeholder="Type the crop"></div>'
+   +(st==='Won'&&!hasWonQuote(l)?'<div style="margin-top:.7rem"><label for="g_amt" style="font-weight:600" id="g_amtl">Sale amount (Rs)</label><input id="g_amt" type="number" min="1" step="any" inputmode="decimal" placeholder="e.g. 4020"></div>':'')
+   +'<div id="g_err" style="color:#b42318;font-size:.85rem;margin-top:.5rem"></div>'
+   +'<div class="acts2" style="margin-top:.7rem"><button class="btn pri" id="g_ok">Save and move to '+esc(st)+'</button><button class="btn" id="g_no">Cancel</button></div></div>';
+  function sel(){var b=g.querySelector('#g_pt button[aria-pressed="true"]');return b?b.dataset.v:''}
+  function refreshUI(){var v=sel(),b2b=B2B_PT.test(v);$('g_cropl').textContent=b2b?'Main crop they sell for (optional)':'Crop';var a=$('g_amtl');if(a)a.textContent=b2b?'Order value (Rs) - required':'Sale amount (Rs) - leave empty for Rs '+DEFAULT_WON}
+  g.querySelectorAll('#g_pt button').forEach(function(b){b.onclick=function(){g.querySelectorAll('#g_pt button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});refreshUI()}});
+  $('g_crop').onchange=function(){$('g_crop2').classList.toggle('hide',this.value!=='__other')};
+  $('g_no').onclick=function(){g.innerHTML=''};
+  refreshUI();
+  $('g_ok').onclick=async function(){
+    var v=sel(),b2b=B2B_PT.test(v),cs=$('g_crop'),crop=cs.value==='__other'?$('g_crop2').value.trim():cs.value,amtE=$('g_amt'),amt=amtE?parseFloat(amtE.value):NaN;
+    if(!v){$('g_err').textContent='Choose who this is.';return}
+    if(!b2b&&!crop){$('g_err').textContent='Choose the crop.';return}
+    if(amtE&&b2b&&!(amt>0)){$('g_err').textContent='Enter the order value for this business sale.';return}
+    this.disabled=true;
+    try{
+      var body={person_type:v};if(crop)body.crop=crop;
+      var n=await patch('leads',l.id,body);if(n)Object.assign(l,n);
+      if(amtE){var val2=amt>0?amt:DEFAULT_WON;var r=await api('quotes',{method:'POST',body:{lead_id:l.id,company:l.company||l.name,country:l.country,value:val2,currency:'INR',status:'Won',notes:'Sale amount entered when marked Won'}});S.quotes.unshift(r[0])}
+      var sb={stage:st};if(CLOSED.indexOf(st)>=0)sb.next_followup=null;
+      upd(l,sb,'Moved to '+st+(b2b?' (B2B)':''));
+    }catch(e){this.disabled=false;$('g_err').textContent='Not saved: '+e.message}
+  };
+  g.scrollIntoView({block:'nearest'});
+}
 function openLead(id,keep){
   var l=S.leads.find(function(x){return x.id===id});if(!l)return;
   S.sel=id;cur={type:'lead',id:id};
@@ -624,7 +669,7 @@ function openLead(id,keep){
   +'<div class="sh-body">'
   +(ph||em?'<div class="callbar">'+(ph?'<a class="btn pri" href="tel:+'+waNum(l.phone)+'" aria-label="Call '+esc(nice(l.phone))+'">'+IC.phone+'Call</a><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/'+waNum(l.phone)+'">'+IC.wa+'WhatsApp</a>':'')+(em?'<a class="btn'+(ph?' full':' full')+'" href="mailto:'+esc(em)+'">'+IC.mail+esc(em)+'</a>':'')+'</div>':'')
   +(missedOpen(l)?'<div class="box" style="border-color:#f0c4bd;background:var(--hots)"><b class="missed">Missed call '+esc(rel(l.last_call_at))+'</b><div style="font-size:.88rem;color:var(--mut)">Call back, then move the stage below.</div></div>':'')
-  +'<div class="box"><h3>Stage</h3><div class="seg" id="stg">'+STAGES.map(function(s){return '<button data-v="'+s+'" class="'+(s==='Lost'?'lost':s==='Won'?'won':'')+'" aria-pressed="'+(l.stage===s)+'">'+s+'</button>'}).join('')+'</div></div>'
+  +'<div class="box"><h3>Stage</h3><div class="seg" id="stg">'+STAGES.map(function(s){return '<button data-v="'+s+'" class="'+(s==='Lost'?'lost':s==='Won'?'won':'')+'" aria-pressed="'+(l.stage===s)+'">'+s+'</button>'}).join('')+'</div>'+(l.person_type?'<div style="margin-top:.45rem;font-size:.85rem;color:var(--mut)">Lead type: <b>'+esc(l.person_type)+'</b>'+(isB2B(l)?' <span class="tag" style="background:#fff3d6;color:#8a5a00">B2B</span>':'')+'</div>':'')+'<div id="gate"></div></div>'
   +'<div class="box"><h3>Next follow-up</h3><div class="fu-now'+(isOpen(l)&&n!=null&&n<0?' red':'')+'">'+(l.next_followup?esc(fuText(l.next_followup))+(n!=null&&Math.abs(n)>1?'':'')+' <span style="color:var(--faint);font-weight:400">('+esc(fd(l.next_followup))+')</span>':'No follow-up set')+'</div>'
   +'<div class="seg" id="fu"><button data-d="0">Today</button><button data-d="1">Tomorrow</button><button data-d="3">In 3 days</button><button data-d="7">Next week</button>'+(l.next_followup?'<button data-d="x">Clear</button>':'')+'</div>'
   +'<div class="inline"><label class="sr" for="d_next">Pick a date</label><input id="d_next" type="date" value="'+dtv(l.next_followup)+'"></div></div>'
@@ -646,7 +691,7 @@ function openLead(id,keep){
   if(!keep)$('sheet').scrollTop=0;
   if(CACHE.wa[id])$('d_wa').innerHTML=CACHE.wa[id];if(CACHE.calls[id])$('d_calls').innerHTML=CACHE.calls[id];
   if(!keep||!CACHE.wa[id]){if(l.call_count)loadCalls(id);loadWA(id)}
-  $('stg').querySelectorAll('button').forEach(function(b){b.onclick=function(){if(l.stage===b.dataset.v)return;var body={stage:b.dataset.v};if(CLOSED.indexOf(b.dataset.v)>=0)body.next_followup=null;upd(l,body,'Moved to '+b.dataset.v)}});
+  $('stg').querySelectorAll('button').forEach(function(b){b.onclick=function(){if(l.stage===b.dataset.v)return;if(needsGate(l,b.dataset.v))return gate(l,b.dataset.v);var body={stage:b.dataset.v};if(CLOSED.indexOf(b.dataset.v)>=0)body.next_followup=null;upd(l,body,'Moved to '+b.dataset.v)}});
   $('fu').querySelectorAll('button').forEach(function(b){b.onclick=function(){var d=b.dataset.d;if(d==='x')return upd(l,{next_followup:null},'Follow-up cleared');var t=today0();t.setDate(t.getDate()+(+d));upd(l,{next_followup:dkey(t)},'Follow-up: '+fuText(dkey(t)))}});
   $('d_next').onchange=function(){if(this.value)upd(l,{next_followup:this.value},'Follow-up: '+fuText(this.value))};
   $('pri').querySelectorAll('button').forEach(function(b){b.onclick=function(){if(l.priority!==b.dataset.v)upd(l,{priority:b.dataset.v},'Priority: '+b.dataset.v)}});
