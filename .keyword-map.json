@@ -270,6 +270,144 @@
   "audience": "B2B buyers, distributors, importers"
  },
  {
+  "path": "/granular-biostimulants-manufacturer-india",
+  "primary": "biostimulant granules manufacturer india",
+  "secondary": [
+   "granular biostimulants manufacturer",
+   "biostimulant granules supplier",
+   "organic granules manufacturer india",
+   "soil granules manufacturer",
+   "biostimulant granules bulk"
+  ],
+  "questions": [
+   "Who is a biostimulant granules manufacturer in India?",
+   "What types of biostimulant granules do you make?",
+   "What is the monthly capacity for granules?",
+   "Is there a minimum order quantity for granules?",
+   "What is the price of biostimulant granules per kg or tonne?",
+   "What pack sizes are available?",
+   "Can I get a free sample?",
+   "Do you export biostimulant granules?"
+  ],
+  "intent": "Commercial",
+  "audience": "B2B buyers, distributors, importers"
+ },
+ {
+  "path": "/humic-acid-granules-manufacturer-india",
+  "primary": "humic acid granules manufacturer",
+  "secondary": [
+   "humic acid granules",
+   "humic granules manufacturer",
+   "humic acid granules price",
+   "humic acid 51 granular",
+   "humic acid granules bulk",
+   "humic acid granules for soil",
+   "humic acid granules exporter"
+  ],
+  "questions": [
+   "Who is a humic acid granules manufacturer in India?",
+   "What are humic acid granules used for?",
+   "What is the difference between humic acid 51% granular and 1.5% granules?",
+   "What is the price of humic acid granules per kg or per tonne?",
+   "Can I buy humic acid granules under my own brand?",
+   "Can humic granules be mixed with NPK, urea or DAP?",
+   "Do you make humic granules for export?",
+   "Do you give free samples of humic granules?"
+  ],
+  "intent": "Commercial",
+  "audience": "B2B buyers, distributors, importers"
+ },
+ {
+  "path": "/seaweed-extract-granules-manufacturer-india",
+  "primary": "seaweed extract granules manufacturer",
+  "secondary": [
+   "seaweed granules manufacturer",
+   "seaweed granules fertilizer",
+   "seaweed granules price",
+   "sargassum granules",
+   "seaweed granules bulk",
+   "seaweed granules exporter"
+  ],
+  "questions": [
+   "Who is a seaweed granules manufacturer in India?",
+   "What are seaweed granules used for?",
+   "What is the price of seaweed granules per kg?",
+   "Do you make Kappaphycus or Ascophyllum granules?",
+   "Can I sell seaweed granules under my brand?",
+   "Are seaweed granules the same as zyme granules?",
+   "What pack sizes are available?",
+   "Do you export seaweed granules?"
+  ],
+  "intent": "Commercial",
+  "audience": "B2B buyers, distributors, importers"
+ },
+ {
+  "path": "/amino-acid-granules-manufacturer-india",
+  "primary": "amino acid granules manufacturer",
+  "secondary": [
+   "amino acid granules",
+   "amino acid granules fertilizer",
+   "protein hydrolysate granules",
+   "amino acid granules price",
+   "amino acid granules bulk",
+   "plant based amino acid granules"
+  ],
+  "questions": [
+   "Who is an amino acid granules manufacturer in India?",
+   "Which amino acid granule grades do you make?",
+   "Are amino acid granules made to order?",
+   "What is the price of amino acid granules per kg?",
+   "Do you make animal-source amino acid granules?",
+   "Can I sell amino acid granules under my brand?",
+   "Do you export amino acid granules?",
+   "What pack sizes are available?"
+  ],
+  "intent": "Commercial",
+  "audience": "B2B buyers, distributors, importers"
+ },
+ {
+  "path": "/private-label-zyme-granules",
+  "primary": "private label zyme granules",
+  "secondary": [
+   "private label granules manufacturer",
+   "oem humic granules",
+   "private label seaweed granules",
+   "contract manufacturing biostimulant granules",
+   "own brand granules"
+  ],
+  "questions": [
+   "Do you make private label zyme granules?",
+   "What is the minimum order for private label granules?",
+   "How long does a private label granule order take?",
+   "Do you supply a specification sheet and NOC copy?",
+   "What pack sizes can you do?",
+   "Can you export private label granules?",
+   "Who owns the formula and the brand?"
+  ],
+  "intent": "Commercial",
+  "audience": "Brand owners, dealers, importers"
+ },
+ {
+  "path": "/granules-for-npk-blenders",
+  "primary": "biostimulant granules for npk blenders",
+  "secondary": [
+   "humic granules for npk blending",
+   "fertilizer blenders humic granules supplier",
+   "value added npk granules",
+   "bulk humic granules for blending"
+  ],
+  "questions": [
+   "Can biostimulant granules be added to an NPK blend?",
+   "What granule size do you supply for blending?",
+   "Do you supply jumbo bags to blenders?",
+   "Is there a minimum order for blenders?",
+   "Do you give samples for blending trials?",
+   "What is the price per tonne of biostimulant granules?"
+  ],
+  "intent": "Commercial",
+  "audience": "Blenders, granulators, fertilizer companies"
+ },
+ {
   "path": "/products/humic-acid-5-powder",
   "primary": "humic acid 5 powder",
   "secondary": [
@@ -1820,6 +1958,24 @@
   ],
   "intent": "Informational",
   "audience": "Distributors, brands, importers"
+ },
+ {
+  "path": "/resources/humic-vs-seaweed-granules",
+  "primary": "humic vs seaweed granules",
+  "secondary": [
+   "humic acid granules vs seaweed granules",
+   "humic granules uses",
+   "seaweed granules uses",
+   "zyme granules composition"
+  ],
+  "questions": [
+   "What is the difference between humic and seaweed granules?",
+   "Can I use humic and seaweed granules together?",
+   "Which is better for sugarcane or banana?",
+   "Which seaweed granules do you make?"
+  ],
+  "intent": "Informational",
+  "audience": "Growers, buyers, distributors"
  },
  {
   "path": "/resources",

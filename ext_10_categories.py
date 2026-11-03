@@ -19,11 +19,11 @@ EXTRA_INTRO = {
  "/organic-fertilizer-manufacturer-india": ('<p>Comparing an organic fertilizer company in India? Look for one that makes what it sells. '
    'We are a manufacturer, not a trader: our plant is at GIDC Shihor, Bhavnagar, and our biostimulant and biofertiliser grades are covered by a '
    'No Objection Certificate from the Directorate of Agriculture, Government of Gujarat. We quote against your specification, not a fixed catalogue.</p>'),
- "/humic-acid-manufacturer-india": ('<p>Looking for potassium humate in India? We make potassium humate 49% powder, a soluble grade for drip, drench and liquid products, '
+ "/humic-acid-manufacturer-india": ('<p>Need a broadcast product? See our <a href="/humic-acid-granules-manufacturer-india">humic acid granules</a>.</p><p>Looking for potassium humate in India? We make potassium humate 49% powder, a soluble grade for drip, drench and liquid products, '
    'at our own plant in Bhavnagar and supply it in bulk, under private label and for export. See <a href="/bulk-pricing-and-quotes">how bulk pricing works</a>.</p>'),
- "/seaweed-extract-manufacturer-india": ('<p>These are seaweed liquid fertilizer grades made at our own plant in Bhavnagar, Gujarat, for buyers in India and abroad. '
+ "/seaweed-extract-manufacturer-india": ('<p>Want seaweed in granular form? See our <a href="/seaweed-extract-granules-manufacturer-india">seaweed extract granules</a>.</p><p>These are seaweed liquid fertilizer grades made at our own plant in Bhavnagar, Gujarat, for buyers in India and abroad. '
    'Pricing depends on the grade, pack and quantity: see <a href="/bulk-pricing-and-quotes">how bulk pricing works</a>.</p>'),
- "/amino-acid-protein-hydrolysate-manufacturer-india": ('<p>Searching for amino acid fertilizer price in India? Price depends on the grade, source, form and quantity. '
+ "/amino-acid-protein-hydrolysate-manufacturer-india": ('<p>Want a solid product? See our <a href="/amino-acid-granules-manufacturer-india">amino acid granules</a>.</p><p>Searching for amino acid fertilizer price in India? Price depends on the grade, source, form and quantity. '
    'Read <a href="/bulk-pricing-and-quotes">how bulk pricing works</a>, then send us the grade and quantity for a quote.</p>'),
  "/micronutrient-fertilizer-manufacturer-india": ('<p>We are a micronutrient fertilizers manufacturer that makes to order: mixtures, chelated forms and biostimulant-fortified products, '
    'to the grade notified for your state or to your export specification.</p>'),
@@ -82,7 +82,7 @@ def cat_page(d):
     body += cta(d.get("cta_t", "Tell us the grade, quantity and destination."), "We reply with a quote and a free sample.", d["wa"])
     sch = [faq_ld(faqs)]
     if d.get("grades"):
-        sch.append(itemlist_ld(d["crumb"] + " grades", [(grade_path(n, f), f"{n} ({f})") for g, n, f in GRADES if g in d.get("groups", [])]))
+        sch.append(itemlist_ld(d["crumb"] + " grades", d["ilist"] if d.get("ilist") else [(grade_path(n, f), f"{n} ({f})") for g, n, f in GRADES if g in d.get("groups", [])]))
     page(p, d["title"], d["desc"], body, [("Products", "/products"), (d["crumb"], None)], sch, "0.9", d.get("og"))
     kw(p, d["kw"][0], d["kw"][1], [q for q, _ in faqs], d.get("intent", "Commercial"), d.get("aud", "B2B buyers, distributors, importers"))
 
@@ -491,7 +491,7 @@ cat_page(dict(
       ("What pack sizes do you offer?", "1, 2, 4, 5, 8, 10 and 20 kg bags or buckets, 25 and 50 kg bags, and 600 kg and 1000 kg jumbo bags."),
       ("Are zyme granules legal to sell after June 2025?", "Biostimulants must be specified in Schedule VI of the Fertiliser Control Order to be sold in India. Check that the grade on the bag is a listed grade. Ours are."),
       ("Seaweed granules or humic granules: which is better?", "Humic granules mainly condition the soil and support roots; seaweed granules add stress support. Our humic plus seaweed granules combine both.")],
- related=[("/products/humic-acid-51-granular", "Humic acid 51% granular", ""), ("/products/sargassum-tenerrimum-2-granular", "Sargassum tenerrimum 2% granular", ""),
+ related=[("/granular-biostimulants-manufacturer-india", "All biostimulant granules", ""), ("/humic-acid-granules-manufacturer-india", "Humic acid granules", ""), ("/seaweed-extract-granules-manufacturer-india", "Seaweed extract granules", ""), ("/amino-acid-granules-manufacturer-india", "Amino acid granules", ""), ("/private-label-zyme-granules", "Private label zyme granules", ""), ("/products/humic-acid-51-granular", "Humic acid 51% granular", ""), ("/products/sargassum-tenerrimum-2-granular", "Sargassum tenerrimum 2% granular", ""),
           ("/products/humic-acid-plus-seaweed-extract-granules", "Humic acid + seaweed extract granules", ""), ("/resources/what-are-zyme-granules", "What are zyme granules?", "Guide"),
           ("/fco-schedule-vi-biostimulants", "FCO Schedule VI explained", "Regulation"), ("/become-a-distributor", "Become a distributor", "")],
  kw=("zyme granules manufacturer", ["zyme granules", "zyme granules uses", "zyme granules composition", "zyme granules price per kg", "zyme granules bucket", "bio zyme granules", "seaweed granules fertilizer", "seaweed granules price", "humic granules manufacturer"]),

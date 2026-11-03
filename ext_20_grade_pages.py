@@ -34,7 +34,7 @@ for g, n, f in GRADES:
                 f'<h3>Mixing</h3><p>{gi["compat"]}</p></div></div>' + CLAIM_NOTE, f"About {esc(n)}", cls="tint")
     if pic:
         body += sec(buy_block(liquid, solid), "Buying terms")
-    body += sec(faq_html(faq) + links(siblings + [(gi["cat"], f"All {gi['cat_name'].lower()} grades", "Category page")], "Related grades"), "Questions about this grade", cls="" if pic else "")
+    body += sec(faq_html(faq) + links(siblings + [(gi["cat"], f"All {gi['cat_name'].lower()} grades", "Category page")] + ([("/granular-biostimulants-manufacturer-india", "All biostimulant granules", "Granule range"), ("/zyme-granules-manufacturer", "Zyme granules", "")] if f in ("Granular", "Granules", LAF) else []), "Related grades"), "Questions about this grade", cls="" if pic else "")
     body += cta(f"Need {esc(n)}?", "Send the quantity and destination. We reply with a quote and a free sample.", f"Hello Gujarat Bio Organics, please quote {n} ({fw}).")
     ft = fw.title() if f != LAF else "Liquid, Granule, Powder"
     title = next(t for t in (f"{n} {ft} Manufacturer India | GBO", f"{n} {ft} Manufacturer | GBO", f"{n} {ft} | GBO", f"{n} | GBO") if len(t) <= 62 or t == f"{n} | GBO")

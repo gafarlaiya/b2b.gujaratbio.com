@@ -100,7 +100,7 @@ def org_ld():
             "areaServed": ["GCC countries", "Africa", "Russian Federation", "Europe", "North America", "South America", "India"],
             "knowsAbout": ["Organic fertilizers", "Biostimulants", "Humic acid", "Fulvic acid", "Potassium humate", "Seaweed extract",
                            "Protein hydrolysate", "Amino acids", "Biofertilisers", "Micronutrient fertilizers", "Water-soluble fertilizers",
-                           "Slow-release fertilizers", "Custom fertilizer blends", "Crop-specific fertilizers", "Zyme granules",
+                           "Slow-release fertilizers", "Custom fertilizer blends", "Crop-specific fertilizers", "Zyme granules", "Humic acid granules", "Seaweed granules", "Amino acid granules", "Biostimulant granules",
                            "FCO Schedule VI", "Private label fertilizer manufacturing"],
             "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "telephone": "+919978791167",
                               "email": MAIL, "availableLanguage": ["English", "Hindi", "Gujarati"]}],
@@ -125,7 +125,7 @@ def footer():
     return f'''<footer class="site-footer"><div class="wrap"><div class="fgrid">
 <div><h2 class="fh">{NAME}</h2><address>Factory: {FACTORY}<br><br>Registered office: {REGOFF}</address>
 <p style="margin-top:1rem">CIN {CIN}<br>GSTIN {GST}</p></div>
-<div><h2 class="fh">Products</h2><ul><li><a href="/organic-fertilizer-manufacturer-india">Organic fertilizers</a></li><li><a href="/biostimulants-manufacturer-india">Biostimulants</a></li><li><a href="/humic-acid-manufacturer-india">Humic acid</a></li><li><a href="/seaweed-extract-manufacturer-india">Seaweed extract</a></li><li><a href="/amino-acid-protein-hydrolysate-manufacturer-india">Amino acids</a></li><li><a href="/biofertilisers-manufacturer-india">Biofertilisers</a></li><li><a href="/micronutrient-fertilizer-manufacturer-india">Micronutrients</a></li><li><a href="/water-soluble-fertilizer-special-grades">Special grades</a></li><li><a href="/slow-release-fertilizer">Slow release</a></li><li><a href="/zyme-granules-manufacturer">Zyme granules</a></li><li><a href="/custom-fertilizer-blends">Custom blends</a></li><li><a href="/crop-specific-fertilizers">Crop-specific</a></li></ul></div>
+<div><h2 class="fh">Products</h2><ul><li><a href="/organic-fertilizer-manufacturer-india">Organic fertilizers</a></li><li><a href="/biostimulants-manufacturer-india">Biostimulants</a></li><li><a href="/humic-acid-manufacturer-india">Humic acid</a></li><li><a href="/seaweed-extract-manufacturer-india">Seaweed extract</a></li><li><a href="/amino-acid-protein-hydrolysate-manufacturer-india">Amino acids</a></li><li><a href="/biofertilisers-manufacturer-india">Biofertilisers</a></li><li><a href="/micronutrient-fertilizer-manufacturer-india">Micronutrients</a></li><li><a href="/water-soluble-fertilizer-special-grades">Special grades</a></li><li><a href="/slow-release-fertilizer">Slow release</a></li><li><a href="/granular-biostimulants-manufacturer-india">Biostimulant granules</a></li><li><a href="/humic-acid-granules-manufacturer-india">Humic acid granules</a></li><li><a href="/seaweed-extract-granules-manufacturer-india">Seaweed granules</a></li><li><a href="/amino-acid-granules-manufacturer-india">Amino acid granules</a></li><li><a href="/zyme-granules-manufacturer">Zyme granules</a></li><li><a href="/custom-fertilizer-blends">Custom blends</a></li><li><a href="/crop-specific-fertilizers">Crop-specific</a></li></ul></div>
 <div><h2 class="fh">Company</h2><ul><li><a href="/about">About us</a></li><li><a href="/why-gujarat-bio">Why we are different</a></li><li><a href="/impact">Our story and grower videos</a></li><li><a href="/research-development">R&amp;D</a></li><li><a href="/manufacturing-facility">Manufacturing</a></li><li><a href="/quality-compliance">Quality and compliance</a></li><li><a href="/private-label-oem">Private label and OEM</a></li><li><a href="/bulk-supply">Bulk supply</a></li><li><a href="/export">Export</a></li><li><a href="/become-a-distributor">Become a distributor</a></li><li><a href="/contact">Contact</a></li></ul></div>
 <div><h2 class="fh">Knowledge</h2><ul><li><a href="/resources">Knowledge centre</a></li><li><a href="/crops">Crop programmes</a></li><li><a href="/field-solutions">Field solutions</a></li><li><a href="/fco-schedule-vi-biostimulants">FCO Schedule VI</a></li><li><a href="/glossary">Glossary</a></li><li><a href="/faq">FAQ</a></li><li><a href="/resources/what-is-a-biostimulant">What is a biostimulant</a></li><li><a href="/resources/humic-acid-uses-in-agriculture">Humic acid uses</a></li><li><a href="/resources/seaweed-extract-uses-in-agriculture">Seaweed extract uses</a></li><li><a href="/resources/protein-hydrolysate-vs-amino-acid">Protein hydrolysate vs amino acid</a></li><li><a href="/resources/kappaphycus-vs-ascophyllum-vs-sargassum">Kappaphycus vs Ascophyllum vs Sargassum</a></li><li><a href="https://www.gujaratbio.com/plant-science-series" rel="noopener">Plant science series (for growers)</a></li></ul></div>
 <div><h2 class="fh">Talk to us</h2><ul><li><a href="https://wa.me/{WA}">WhatsApp {PHONE}</a></li><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><a href="{FB}" rel="noopener">Facebook</a></li><li><a href="{YT}" rel="noopener">YouTube</a></li></ul></div>
@@ -246,6 +246,7 @@ CAT_HUB = [("/organic-fertilizer-manufacturer-india", "Organic fertilizers", "Or
            ("/micronutrient-fertilizer-manufacturer-india", "Micronutrients", "Zinc, boron, iron and more, chelated and mixtures, made to order."),
            ("/water-soluble-fertilizer-special-grades", "Special grade fertilizers", "Water-soluble NPK and fortified grades, made to order."),
            ("/slow-release-fertilizer", "Slow-release fertilizers", "Granules that feed over weeks, made to order."),
+           ("/granular-biostimulants-manufacturer-india", "Biostimulant granules", "Humic, seaweed and amino acid granules in bulk, private label and export."),
            ("/zyme-granules-manufacturer", "Zyme granules", "Humic, seaweed and protein granules from listed grades."),
            ("/custom-fertilizer-blends", "Custom blends", "Formulated by our R&D team for your crop and market."),
            ("/crop-specific-fertilizers", "Crop-specific products", "The Immunity range for sugarcane, potato, mango, apple, banana.")]
@@ -319,6 +320,15 @@ home = f'''
 <div class="mat"><a href="/biostimulants-manufacturer-india#protein">{img("amino-20-liquid","Amino acid 20% liquid in a beaker")}<h3>Protein hydrolysate and amino</h3><div class="forms">9 grades &middot; plant and animal source</div><p>Amino acid products that support recovery and growth after stress.</p></a></div>
 </div>
 <p class="also">Also: 7 blended grades, 2 botanical grades and <a href="/biofertilisers-manufacturer-india">11 biofertiliser types</a>.</p>
+</div></section>
+
+<section class="section tint"><div class="wrap">
+<div class="sec-head"><h2>Biostimulant granules, in bulk or under your brand</h2><p>Humic acid, seaweed and amino acid granules from our own plant: 2,500 tonnes of solid products a month, no minimum order, free samples.</p></div>
+<div class="hub"><a class="hub-i" href="/humic-acid-granules-manufacturer-india"><h3>Humic acid granules</h3><p>51% granular and 1.5% granules.</p></a>
+<a class="hub-i" href="/seaweed-extract-granules-manufacturer-india"><h3>Seaweed extract granules</h3><p>Sargassum 2% and humic plus seaweed.</p></a>
+<a class="hub-i" href="/amino-acid-granules-manufacturer-india"><h3>Amino acid granules</h3><p>Plant-source grades, made to order.</p></a>
+<a class="hub-i" href="/private-label-zyme-granules"><h3>Private label granules</h3><p>Your brand, our plant.</p></a></div>
+<div class="btn-row"><a class="btn btn-dark" href="/granular-biostimulants-manufacturer-india">See all granule grades</a></div>
 </div></section>
 
 <section class="section"><div class="wrap">
@@ -621,7 +631,7 @@ os.replace(os.path.join(ROOT, "404", "index.html"), os.path.join(ROOT, "404.html
 os.rmdir(os.path.join(ROOT, "404"))
 
 # ------------------------------------------------------------------ extended content
-for _f in ("ext_10_categories.py", "ext_20_grade_pages.py", "ext_30_crops.py", "ext_40_company.py", "ext_42_difference.py", "ext_45_impact.py", "ext_46_privacy.py", "ext_47_pricing.py", "ext_50_resources.py", "ext_60_glossary_faq.py"):
+for _f in ("ext_10_categories.py", "ext_12_granules.py", "ext_20_grade_pages.py", "ext_30_crops.py", "ext_40_company.py", "ext_42_difference.py", "ext_45_impact.py", "ext_46_privacy.py", "ext_47_pricing.py", "ext_50_resources.py", "ext_60_glossary_faq.py"):
     exec(open(os.path.join(ROOT, _f), encoding="utf-8").read())
 json.dump(KWMAP, open(os.path.join(ROOT, ".keyword-map.json"), "w"), indent=1, ensure_ascii=False)
 

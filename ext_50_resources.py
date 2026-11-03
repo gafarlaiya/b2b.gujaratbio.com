@@ -253,6 +253,20 @@ art("choosing-a-biostimulant-manufacturer-checklist", "Choosing a biostimulant m
  [("/quality-compliance", "Quality and compliance", ""), ("/manufacturing-facility", "Manufacturing facility", ""), ("/fco-schedule-vi-biostimulants", "FCO Schedule VI", "")],
  "biostimulant manufacturers in india", ["biostimulant companies in india", "biostimulant manufacturing companies", "organic fertilizer manufacturer india", "how to choose fertilizer supplier"], "Distributors, brands, importers")
 
+# 17 -----------------------------------------------------------------
+art("humic-vs-seaweed-granules", "Humic vs seaweed granules: which one to choose?", "Humic vs Seaweed Granules: Differences, Uses & Which to Buy",
+ "How humic acid granules and seaweed granules differ, what each is used for, and how to choose between them or combine them.",
+ "Humic acid granules mainly condition the soil, hold nutrients near the roots and support root growth. Seaweed granules bring seaweed into the root zone to support growth and the crop's response to stress. Many buyers choose a humic plus seaweed granule to get both in one broadcast. Choose by the job you need done, the active content per acre and the grade on the bag.",
+ [("compare", "Side by side", table(["", "Humic acid granules", "Seaweed granules"], [["Main role", "Soil conditioning and root support", "Seaweed in the root zone, support for stress response"], ["Typical grades", "Humic acid 51% granular, 1.5% granules", "Sargassum tenerrimum 2% granular"], ["Applied", "Broadcast with basal fertilizer, or at top dressing", "Broadcast with basal fertilizer, or at top dressing"], ["Combined product", "Humic acid plus seaweed extract granules", "Humic acid plus seaweed extract granules"]])),
+  ("choose", "How to choose", ul(["Compact, low organic-matter or over-cropped soil: start with humic granules", "A field that faces heat, dry spells or salty patches: consider seaweed in the programme", "One product for dealers to sell: humic plus seaweed granules", "Compare the active content per acre, not the price per kg"])),
+  ("buy", "What to check when buying", "<p>Ask for the grade name as notified under Schedule VI, a specification sheet with the active content, and a test report. See the <a href=\"/granular-biostimulants-manufacturer-india\">granule range</a> and the <a href=\"/fco-schedule-vi-biostimulants\">Schedule VI guide</a>.</p>")],
+ [("What is the difference between humic and seaweed granules?", "Humic granules mainly condition the soil and support roots. Seaweed granules add seaweed to the root zone. A humic plus seaweed granule combines both."),
+  ("Can I use humic and seaweed granules together?", "Yes. They are often applied together, and a humic plus seaweed granule delivers both in one pass."),
+  ("Which is better for sugarcane or banana?", "It depends on the field and the programme. Run a small trial on your own soil and compare the active content per acre."),
+  ("Which seaweed granules do you make?", "Sargassum tenerrimum 2% granular and humic acid plus seaweed extract granules.")],
+ [("/humic-acid-granules-manufacturer-india", "Humic acid granules", ""), ("/seaweed-extract-granules-manufacturer-india", "Seaweed granules", ""), ("/granular-biostimulants-manufacturer-india", "All granule grades", "")],
+ "humic vs seaweed granules", ["humic acid granules vs seaweed granules", "humic granules uses", "seaweed granules uses", "zyme granules composition"])
+
 # ---------------------------------------------------------------- RESOURCES HUB
 rh = hero("Knowledge centre", "Plain answers to the questions growers, distributors, brands and importers ask us about biostimulants, organic fertilizers and biofertilisers.", [("Knowledge centre", None)])
 rh += sec(answer("Our knowledge centre explains biostimulants, organic and specialty fertilizers and biofertilisers in plain language: what they are, how they differ, how to use them and how to buy them, written by the Gujarat Bio Organics R&D team.")
