@@ -408,6 +408,91 @@
   "audience": "Blenders, granulators, fertilizer companies"
  },
  {
+  "path": "/biostimulant-formulations",
+  "primary": "biostimulant formulations",
+  "secondary": [
+   "biostimulant formulation",
+   "biostimulant formulations manufacturer",
+   "ready to pack biostimulant",
+   "biostimulant formulation for private label",
+   "liquid biostimulant formulation"
+  ],
+  "questions": [
+   "What is a biostimulant formulation?",
+   "Can I start a biostimulant business without a factory?",
+   "Do you give formulations to new brands?",
+   "Can you make a formulation to my own brief?",
+   "What is the minimum order?",
+   "How long does it take to launch?"
+  ],
+  "intent": "Commercial / informational",
+  "audience": "Aspiring brand owners, distributors"
+ },
+ {
+  "path": "/start-biostimulant-business-india",
+  "primary": "start biostimulant business india",
+  "secondary": [
+   "biostimulant business",
+   "biostimulant manufacturing business",
+   "how to start biostimulant business",
+   "biostimulant business plan",
+   "start fertilizer business in india",
+   "biostimulant startup"
+  ],
+  "questions": [
+   "How much does it cost to start a biostimulant business?",
+   "Do I need a licence to sell biostimulants in India?",
+   "Which biostimulants should a new brand start with?",
+   "Can I start with a small quantity?",
+   "Do you share your formulation?",
+   "Can I sell under my own brand name?"
+  ],
+  "intent": "Commercial / informational",
+  "audience": "Entrepreneurs, agri-input shops"
+ },
+ {
+  "path": "/ready-to-pack-biostimulant-formulations",
+  "primary": "ready to pack biostimulant",
+  "secondary": [
+   "bulk biostimulant supply",
+   "bulk liquid biostimulant",
+   "biostimulant in ibc",
+   "buy biostimulant in bulk india",
+   "repack biostimulant under own brand"
+  ],
+  "questions": [
+   "What does ready to pack mean?",
+   "Can you pack it for me instead?",
+   "Is there a minimum order?",
+   "Do I get a sample first?",
+   "What documents do you provide?",
+   "How is ready-to-pack priced?"
+  ],
+  "intent": "Commercial",
+  "audience": "Brand owners, distributors"
+ },
+ {
+  "path": "/custom-biostimulant-formulation-development",
+  "primary": "custom biostimulant formulation",
+  "secondary": [
+   "biostimulant formulation development",
+   "contract manufacturing biostimulant",
+   "custom fertilizer formulation india",
+   "biostimulant r and d",
+   "biostimulant oem"
+  ],
+  "questions": [
+   "Can you make a biostimulant formulation to my specification?",
+   "Can you create a brand new biostimulant for India?",
+   "How long does development take?",
+   "Do you share the formulation recipe?",
+   "Is there a minimum order for a custom product?",
+   "Can I trial the product before I commit?"
+  ],
+  "intent": "Commercial",
+  "audience": "Brand owners, importers"
+ },
+ {
   "path": "/products/humic-acid-5-powder",
   "primary": "humic acid 5 powder",
   "secondary": [
@@ -1976,6 +2061,119 @@
   ],
   "intent": "Informational",
   "audience": "Growers, buyers, distributors"
+ },
+ {
+  "path": "/resources/how-biostimulants-are-formulated",
+  "primary": "how biostimulants are formulated",
+  "secondary": [
+   "biostimulant formulation",
+   "biostimulant ingredients",
+   "liquid biostimulant formulation",
+   "humic acid liquid formulation",
+   "biostimulant manufacturing process"
+  ],
+  "questions": [
+   "What is a biostimulant formulation?",
+   "What are the ingredients of a biostimulant?",
+   "Why does pH matter in a humic acid liquid?",
+   "Can a new brand formulate its own biostimulant?",
+   "Do you share your formulation?"
+  ],
+  "intent": "Informational",
+  "audience": "Brand owners, new entrepreneurs"
+ },
+ {
+  "path": "/resources/liquid-vs-powder-vs-granule-biostimulants",
+  "primary": "liquid vs granular biostimulants",
+  "secondary": [
+   "liquid vs powder biostimulant",
+   "granular biostimulant",
+   "biostimulant forms",
+   "powder biostimulant",
+   "biostimulant for broadcast"
+  ],
+  "questions": [
+   "What is the difference between liquid and granular biostimulants?",
+   "Which biostimulant form is best?",
+   "Which form is cheapest to ship?",
+   "Can one active come in all three forms?"
+  ],
+  "intent": "Informational",
+  "audience": "Brand owners, distributors"
+ },
+ {
+  "path": "/resources/biostimulant-formulation-stability-shelf-life-testing",
+  "primary": "biostimulant shelf life",
+  "secondary": [
+   "biostimulant stability testing",
+   "liquid biostimulant shelf life",
+   "humic acid sediment",
+   "biostimulant storage",
+   "biostimulant quality control"
+  ],
+  "questions": [
+   "How is the shelf life of a biostimulant decided?",
+   "Why does my humic acid liquid have sediment?",
+   "How long does a liquid biostimulant last?",
+   "What documents should a manufacturer provide?"
+  ],
+  "intent": "Informational",
+  "audience": "Brand owners, buyers"
+ },
+ {
+  "path": "/resources/biostimulant-business-models-compared",
+  "primary": "biostimulant business models",
+  "secondary": [
+   "private label vs contract manufacturing",
+   "start biostimulant manufacturing business",
+   "own fertilizer plant vs private label",
+   "third party fertilizer manufacturing"
+  ],
+  "questions": [
+   "What is the easiest way to start a biostimulant business?",
+   "Is private label better than building my own plant?",
+   "Do I need a licence for private label?",
+   "What is contract manufacturing?"
+  ],
+  "intent": "Informational",
+  "audience": "Entrepreneurs, brand owners"
+ },
+ {
+  "path": "/resources/biostimulant-label-and-documents-checklist",
+  "primary": "biostimulant label requirements",
+  "secondary": [
+   "biostimulant documents checklist",
+   "fertilizer label requirements india",
+   "private label fertilizer documents",
+   "biostimulant packaging label"
+  ],
+  "questions": [
+   "What must be on a biostimulant label in India?",
+   "Which documents should a manufacturer give a private-label brand?",
+   "Can I put my brand name on a biostimulant made by someone else?",
+   "Can I make yield claims on the label?"
+  ],
+  "intent": "Informational",
+  "audience": "Brand owners, new entrepreneurs"
+ },
+ {
+  "path": "/resources/biostimulant-blends-humic-seaweed-amino-acid",
+  "primary": "biostimulant blends",
+  "secondary": [
+   "humic and seaweed blend",
+   "seaweed amino acid blend",
+   "combination biostimulant",
+   "multi active biostimulant",
+   "humic acid seaweed extract mixture"
+  ],
+  "questions": [
+   "Can I mix humic acid and seaweed extract?",
+   "Is a humic and seaweed blend a listed biostimulant grade?",
+   "Why combine amino acids with seaweed extract?",
+   "Can you make a custom blend?"
+  ],
+  "intent": "Informational",
+  "audience": "Brand owners, distributors"
  },
  {
   "path": "/resources",

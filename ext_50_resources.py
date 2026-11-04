@@ -204,7 +204,7 @@ art("how-to-start-a-fertilizer-brand-private-label", "How to start your own fert
  [("Do I need a licence to sell fertilizer under my brand in India?", "Yes. Selling fertilizers and biostimulants needs authorisation from the state agriculture department under the Fertiliser Control Order. Check current requirements with your state department."),
   ("What is the minimum order for private label?", "With us there is no fixed minimum order quantity."), ("How long does a private-label launch take?", "Once samples, label and pack are approved, production is about one week."),
   ("What is white label fertilizer?", "Another term for private label: a manufacturer's product sold under your brand.")],
- [("/private-label-oem", "Private label and OEM", ""), ("/custom-fertilizer-blends", "Custom blends", ""), ("/resources/choosing-a-biostimulant-manufacturer-checklist", "Manufacturer checklist", "")],
+ [("/private-label-oem", "Private label and OEM", ""), ("/start-biostimulant-business-india", "Start a biostimulant business", ""), ("/biostimulant-formulations", "Biostimulant formulations", ""), ("/custom-fertilizer-blends", "Custom blends", ""), ("/resources/choosing-a-biostimulant-manufacturer-checklist", "Manufacturer checklist", "")],
  "how to start fertilizer brand", ["private label fertilizer", "white label fertilizer", "private label liquid fertilizer", "third party fertilizer manufacturing india", "fertilizer label requirements", "start organic fertilizer business"], "Entrepreneurs, brand owners, distributors")
 
 # 13 -----------------------------------------------------------------
@@ -266,6 +266,8 @@ art("humic-vs-seaweed-granules", "Humic vs seaweed granules: which one to choose
   ("Which seaweed granules do you make?", "Sargassum tenerrimum 2% granular and humic acid plus seaweed extract granules.")],
  [("/humic-acid-granules-manufacturer-india", "Humic acid granules", ""), ("/seaweed-extract-granules-manufacturer-india", "Seaweed granules", ""), ("/granular-biostimulants-manufacturer-india", "All granule grades", "")],
  "humic vs seaweed granules", ["humic acid granules vs seaweed granules", "humic granules uses", "seaweed granules uses", "zyme granules composition"])
+
+exec(open(os.path.join(ROOT, "ext_50b_formulation_guides.py"), encoding="utf-8").read())
 
 # ---------------------------------------------------------------- RESOURCES HUB
 rh = hero("Knowledge centre", "Plain answers to the questions growers, distributors, brands and importers ask us about biostimulants, organic fertilizers and biofertilisers.", [("Knowledge centre", None)])
