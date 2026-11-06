@@ -493,6 +493,28 @@
   "audience": "Brand owners, importers"
  },
  {
+  "path": "/state-partner-programme",
+  "primary": "biostimulant manufacturer for state distributor",
+  "secondary": [
+   "state distributor biostimulant",
+   "third party biostimulant manufacturer India",
+   "biostimulant manufacturer for my brand",
+   "FCO approved biostimulant manufacturer",
+   "agri input marketing company partnership"
+  ],
+  "questions": [
+   "What is the GBO State Partner Programme?",
+   "Who can apply?",
+   "Will the products carry my brand or yours?",
+   "Are the products legal to sell after the 2025 FCO changes?",
+   "Is the territory exclusive?",
+   "How do we start?",
+   "What are the payment terms?"
+  ],
+  "intent": "Commercial",
+  "audience": "Agri-input marketers, state distributors"
+ },
+ {
   "path": "/products/humic-acid-5-powder",
   "primary": "humic acid 5 powder",
   "secondary": [

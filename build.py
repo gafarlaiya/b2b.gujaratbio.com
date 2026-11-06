@@ -126,7 +126,7 @@ def footer():
 <div><h2 class="fh">{NAME}</h2><address>Factory: {FACTORY}<br><br>Registered office: {REGOFF}</address>
 <p style="margin-top:1rem">CIN {CIN}<br>GSTIN {GST}</p></div>
 <div><h2 class="fh">Products</h2><ul><li><a href="/organic-fertilizer-manufacturer-india">Organic fertilizers</a></li><li><a href="/biostimulants-manufacturer-india">Biostimulants</a></li><li><a href="/humic-acid-manufacturer-india">Humic acid</a></li><li><a href="/seaweed-extract-manufacturer-india">Seaweed extract</a></li><li><a href="/amino-acid-protein-hydrolysate-manufacturer-india">Amino acids</a></li><li><a href="/biofertilisers-manufacturer-india">Biofertilisers</a></li><li><a href="/micronutrient-fertilizer-manufacturer-india">Micronutrients</a></li><li><a href="/water-soluble-fertilizer-special-grades">Special grades</a></li><li><a href="/slow-release-fertilizer">Slow release</a></li><li><a href="/granular-biostimulants-manufacturer-india">Biostimulant granules</a></li><li><a href="/humic-acid-granules-manufacturer-india">Humic acid granules</a></li><li><a href="/seaweed-extract-granules-manufacturer-india">Seaweed granules</a></li><li><a href="/amino-acid-granules-manufacturer-india">Amino acid granules</a></li><li><a href="/zyme-granules-manufacturer">Zyme granules</a></li><li><a href="/custom-fertilizer-blends">Custom blends</a></li><li><a href="/crop-specific-fertilizers">Crop-specific</a></li><li><a href="/biostimulant-formulations">Biostimulant formulations</a></li><li><a href="/start-biostimulant-business-india">Start a biostimulant business</a></li></ul></div>
-<div><h2 class="fh">Company</h2><ul><li><a href="/about">About us</a></li><li><a href="/why-gujarat-bio">Why we are different</a></li><li><a href="/impact">Our story and grower videos</a></li><li><a href="/research-development">R&amp;D</a></li><li><a href="/manufacturing-facility">Manufacturing</a></li><li><a href="/quality-compliance">Quality and compliance</a></li><li><a href="/private-label-oem">Private label and OEM</a></li><li><a href="/bulk-supply">Bulk supply</a></li><li><a href="/export">Export</a></li><li><a href="/become-a-distributor">Become a distributor</a></li><li><a href="/contact">Contact</a></li></ul></div>
+<div><h2 class="fh">Company</h2><ul><li><a href="/about">About us</a></li><li><a href="/why-gujarat-bio">Why we are different</a></li><li><a href="/impact">Our story and grower videos</a></li><li><a href="/research-development">R&amp;D</a></li><li><a href="/manufacturing-facility">Manufacturing</a></li><li><a href="/quality-compliance">Quality and compliance</a></li><li><a href="/private-label-oem">Private label and OEM</a></li><li><a href="/bulk-supply">Bulk supply</a></li><li><a href="/export">Export</a></li><li><a href="/become-a-distributor">Become a distributor</a></li><li><a href="/state-partner-programme">State partner programme</a></li><li><a href="/contact">Contact</a></li></ul></div>
 <div><h2 class="fh">Knowledge</h2><ul><li><a href="/resources">Knowledge centre</a></li><li><a href="/crops">Crop programmes</a></li><li><a href="/field-solutions">Field solutions</a></li><li><a href="/fco-schedule-vi-biostimulants">FCO Schedule VI</a></li><li><a href="/glossary">Glossary</a></li><li><a href="/faq">FAQ</a></li><li><a href="/resources/what-is-a-biostimulant">What is a biostimulant</a></li><li><a href="/resources/humic-acid-uses-in-agriculture">Humic acid uses</a></li><li><a href="/resources/seaweed-extract-uses-in-agriculture">Seaweed extract uses</a></li><li><a href="/resources/protein-hydrolysate-vs-amino-acid">Protein hydrolysate vs amino acid</a></li><li><a href="/resources/kappaphycus-vs-ascophyllum-vs-sargassum">Kappaphycus vs Ascophyllum vs Sargassum</a></li><li><a href="https://www.gujaratbio.com/plant-science-series" rel="noopener">Plant science series (for growers)</a></li></ul></div>
 <div><h2 class="fh">Talk to us</h2><ul><li><a href="https://wa.me/{WA}">WhatsApp {PHONE}</a></li><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><a href="{FB}" rel="noopener">Facebook</a></li><li><a href="{YT}" rel="noopener">YouTube</a></li></ul></div>
 </div><div class="fbot"><span>&copy; <span id="yr">2026</span> Gujarat Bio Organics Private Limited. This website is owned and maintained by Gujarat Bio Organics Private Limited (CIN {CIN}), biostimulant and organic fertilizer manufacturer, Bhavnagar, Gujarat, India. Our other websites: <a href="https://www.gujaratbio.com/">farmers and Immunity range</a>, <a href="https://ganna.in/">ganna.in (sugarcane)</a>.</span><span>Open B2B site: no login needed. Request a quote or free sample directly. Product images are illustrative samples. <a href="/privacy-policy">Privacy and cookies</a> <button type="button" class="linkbtn" data-cookie-settings>Cookie settings</button></span></div></div></footer>
@@ -166,7 +166,7 @@ def page_type(path):
     if path.startswith("/products/"): return "product"
     if path.startswith("/crops/"): return "crop"
     if path.startswith("/resources/") or path.startswith("/glossary/"): return "article"
-    if path in ("/contact", "/bulk-supply", "/export", "/private-label-oem", "/become-a-distributor"): return "lead_page"
+    if path in ("/contact", "/bulk-supply", "/export", "/private-label-oem", "/become-a-distributor", "/state-partner-programme"): return "lead_page"
     if path in ("/impact", "/why-gujarat-bio", "/about", "/research-development", "/manufacturing-facility", "/quality-compliance"): return "company"
     if path == "/privacy-policy": return "legal"
     if path.endswith("-india") or path in ("/products", "/slow-release-fertilizer", "/zyme-granules-manufacturer", "/crop-specific-fertilizers", "/custom-fertilizer-blends", "/field-solutions", "/crops", "/resources", "/faq", "/glossary", "/fco-schedule-vi-biostimulants", "/water-soluble-fertilizer-special-grades"): return "category"
@@ -537,6 +537,7 @@ ds = f'''{page_hero("Become a GBO distributor in your territory", "We are openin
 <ul class="checks"><li>Crop-specific products for your region's main crops</li><li>Product handbills, application guides and dosage charts</li><li>Marketing material and farmer videos</li><li>Direct support from the manufacturer</li><li>Bulk prices from us. You set your own selling margin.</li></ul>
 <h2>Who should apply</h2><p>Agri-input retailers, existing distributors, FPOs, farmer groups, and dealers adding a biostimulant line.</p>
 <p>Growers in areas we do not yet serve can also message us on WhatsApp to find the nearest supply point.</p>
+<p><strong>Selling Rs 2 crore or more a year across a whole state?</strong> See our <a href="/state-partner-programme">State Partner Programme</a>: one partner per state, with us as your approved manufacturer.</p>
 <div class="btn-row"><a class="btn btn-wa" href="{wa("Hello Gujarat Bio Organics, I want to become a distributor.")}">{WA_SVG}WhatsApp {PHONE}</a></div>
 </div><div>{ds_form}</div></div></div></section>
 <section class="section tint"><div class="wrap"><div class="sec-head"><h2>Distributor questions</h2></div>{faq_html(ds_faq)}</div></section>'''
@@ -632,7 +633,7 @@ os.replace(os.path.join(ROOT, "404", "index.html"), os.path.join(ROOT, "404.html
 os.rmdir(os.path.join(ROOT, "404"))
 
 # ------------------------------------------------------------------ extended content
-for _f in ("ext_10_categories.py", "ext_12_granules.py", "ext_13_formulations.py", "ext_20_grade_pages.py", "ext_30_crops.py", "ext_40_company.py", "ext_42_difference.py", "ext_45_impact.py", "ext_46_privacy.py", "ext_47_pricing.py", "ext_50_resources.py", "ext_60_glossary_faq.py"):
+for _f in ("ext_10_categories.py", "ext_12_granules.py", "ext_13_formulations.py", "ext_14_state_partner.py", "ext_20_grade_pages.py", "ext_30_crops.py", "ext_40_company.py", "ext_42_difference.py", "ext_45_impact.py", "ext_46_privacy.py", "ext_47_pricing.py", "ext_50_resources.py", "ext_60_glossary_faq.py"):
     exec(open(os.path.join(ROOT, _f), encoding="utf-8").read())
 json.dump(KWMAP, open(os.path.join(ROOT, ".keyword-map.json"), "w"), indent=1, ensure_ascii=False)
 
@@ -675,6 +676,7 @@ open(os.path.join(ROOT, "llms.txt"), "w").write(f"""# Gujarat Bio Organics Pvt. 
 - {SITE}/bulk-pricing-and-quotes
 - {SITE}/export
 - {SITE}/become-a-distributor
+- {SITE}/state-partner-programme (one marketer per state; GBO as approved manufacturer)
 - {SITE}/contact
 
 ## Guides
