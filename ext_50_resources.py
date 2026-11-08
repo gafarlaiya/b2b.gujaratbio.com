@@ -2,16 +2,19 @@
 
 ARTICLES = []
 
-def art(s, h1, title, desc, ans, sections, faq, related, kwp, kws, aud="Growers, buyers, distributors"):
+def art(s, h1, title, desc, ans, sections, faq, related, kwp, kws, aud="Growers, buyers, distributors", updated="October 2026", sources=None, date=None, author="the Gujarat Bio Organics R&amp;D team"):
     p = f"/resources/{s}"
     trail = [("Knowledge centre", "/resources"), (h1, None)]
     toc = '<div class="toc"><strong>On this page</strong><ol>' + "".join(f'<li><a href="#{i}">{h}</a></li>' for i, h, _ in sections) + "</ol></div>"
     body_html = "".join(f'<h2 id="{i}">{h}</h2>{c}' for i, h, c in sections)
     body = hero(h1, desc, trail)
-    body += sec(f'<div class="prose">{answer(ans)}<p class="meta-line">By the Gujarat Bio Organics R&amp;D team &middot; Updated October 2026</p>{toc}{body_html}</div>')
+    src = ('<h2 id="sources">Sources</h2><ul>' + "".join(f'<li><a href="{esc(u)}" rel="noopener" target="_blank">{esc(t)}</a></li>' for t, u in sources) + "</ul>") if sources else ""
+    body += sec(f'<div class="prose">{answer(ans)}<p class="meta-line">By {author} &middot; Updated {updated}</p>{toc}{body_html}{src}</div>')
     body += sec(faq_html(faq) + links(related, "Read next"), "Frequently asked questions", cls="tint")
     body += cta()
-    page(p, title, desc, body, trail, [article_ld(p, h1, desc), faq_ld(faq)], "0.6")
+    ld = article_ld(p, h1, desc)
+    if date: ld.update({"datePublished": date, "dateModified": date})
+    page(p, title, desc, body, trail, [ld, faq_ld(faq)], "0.6")
     kw(p, kwp, kws, [q for q, _ in faq], "Informational", aud)
     ARTICLES.append((p, h1, desc))
 
@@ -268,6 +271,17 @@ art("humic-vs-seaweed-granules", "Humic vs seaweed granules: which one to choose
  "humic vs seaweed granules", ["humic acid granules vs seaweed granules", "humic granules uses", "seaweed granules uses", "zyme granules composition"])
 
 exec(open(os.path.join(ROOT, "ext_50b_formulation_guides.py"), encoding="utf-8").read())
+
+# ---------------------------------------------------------------- AUTO-PUBLISHED ARTICLES (content/auto/*.json, see AUTOPUBLISH.md)
+import glob as _g, json as _j, datetime as _dt
+_AUTO = sorted((_j.load(open(f, encoding="utf-8")) for f in _g.glob(os.path.join(ROOT, "content", "auto", "*.json"))), key=lambda a: a["date"], reverse=True)
+for _a in _AUTO:
+    _d = _dt.date.fromisoformat(_a["date"])
+    art(_a["slug"], _a["h1"], _a["title"], _a["desc"], _a["answer"], [tuple(x) for x in _a["sections"]], [tuple(x) for x in _a["faq"]],
+        [tuple(x) for x in _a["related"]], _a["keyword"], _a.get("keywords", []), _a.get("audience", "Growers, buyers, distributors"),
+        updated=_d.strftime("%-d %B %Y"), sources=_a.get("sources"), date=_a["date"], author="Gafar Laiya and the Gujarat Bio Organics R&amp;D team")
+# newest guides first on the hub
+ARTICLES[:] = [x for x in ARTICLES if x[0] in {"/resources/" + a["slug"] for a in _AUTO}] + [x for x in ARTICLES if x[0] not in {"/resources/" + a["slug"] for a in _AUTO}]
 
 # ---------------------------------------------------------------- RESOURCES HUB
 rh = hero("Knowledge centre", "Plain answers to the questions growers, distributors, brands and importers ask us about biostimulants, organic fertilizers and biofertilisers.", [("Knowledge centre", None)])

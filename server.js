@@ -148,7 +148,7 @@ http.createServer((req, res) => {
   if (p.length > 1 && p.endsWith('/')) p = p.slice(0, -1);
   const to = redirectFor(p); if (to && to !== p) { res.writeHead(301, {Location: to}); return res.end(); }
   const full = path.normalize(path.join(ROOT, p));
-  if (!full.startsWith(ROOT) || /(^|\/)\.|server\.js$|package\.json$|\.py$|\.md$|\.gs$|^\/lead-system/.test(p)) return send(res, 404, path.join(ROOT, '404.html'), null, req);
+  if (!full.startsWith(ROOT) || /(^|\/)\.|server\.js$|package\.json$|\.py$|\.md$|\.gs$|\.csv$|^\/content\/auto\/|^\/lead-system/.test(p)) return send(res, 404, path.join(ROOT, '404.html'), null, req);
   fs.stat(full, (e, st) => {
     if (!e && st.isFile()) return send(res, 200, full, null, req);
     const idx = path.join(full, 'index.html');
