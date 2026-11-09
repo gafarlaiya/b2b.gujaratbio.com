@@ -1,3 +1,4 @@
+exec(open(os.path.join(ROOT, "seo_overrides.py"), encoding="utf-8").read())
 # Shared helpers for the extended site. Loaded by build.py with exec(), so it sees
 # render, esc, img, faq_html, faq_ld, cta, wa, WA_SVG, SITE, PAGES, GRADES, BIOS, etc.
 import re as _re
@@ -30,6 +31,7 @@ def trail_ld(path, trail):
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (n, u) in enumerate(items)]}
 
 def page(path, title, desc, body, trail, schemas=None, priority="0.6", og=None):
+    if path in SEO: title, desc = SEO[path]
     ld = [trail_ld(path, trail)] + (schemas or [])
     kwargs = {"og_img": og} if og else {}
     render(path, title, desc, body, ld, None, **kwargs)
