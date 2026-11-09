@@ -2,14 +2,15 @@
 
 ARTICLES = []
 
-def art(s, h1, title, desc, ans, sections, faq, related, kwp, kws, aud="Growers, buyers, distributors", updated="October 2026", sources=None, date=None, author="the Gujarat Bio Organics R&amp;D team"):
+def art(s, h1, title, desc, ans, sections, faq, related, kwp, kws, aud="Growers, buyers, distributors", updated="October 2026", sources=None, date=None, author="the Gujarat Bio Organics R&amp;D team", image=None, image_alt=""):
     p = f"/resources/{s}"
     trail = [("Knowledge centre", "/resources"), (h1, None)]
     toc = '<div class="toc"><strong>On this page</strong><ol>' + "".join(f'<li><a href="#{i}">{h}</a></li>' for i, h, _ in sections) + "</ol></div>"
     body_html = "".join(f'<h2 id="{i}">{h}</h2>{c}' for i, h, c in sections)
     body = hero(h1, desc, trail)
     src = ('<h2 id="sources">Sources</h2><ul>' + "".join(f'<li><a href="{esc(u)}" rel="noopener" target="_blank">{esc(t)}</a></li>' for t, u in sources) + "</ul>") if sources else ""
-    body += sec(f'<div class="prose">{answer(ans)}<p class="meta-line">By {author} &middot; Updated {updated}</p>{toc}{body_html}{src}</div>')
+    fig = (f'<figure class="art-fig"><img src="{esc(image)}" alt="{esc(image_alt or h1)}" width="1200" height="675" loading="eager"><figcaption>Illustration</figcaption></figure>') if image else ""
+    body += sec(f'<div class="prose">{fig}{answer(ans)}<p class="meta-line">By {author} &middot; Updated {updated}</p>{toc}{body_html}{src}</div>')
     body += sec(faq_html(faq) + links(related, "Read next"), "Frequently asked questions", cls="tint")
     body += cta()
     ld = article_ld(p, h1, desc)
@@ -279,7 +280,7 @@ for _a in _AUTO:
     _d = _dt.date.fromisoformat(_a["date"])
     art(_a["slug"], _a["h1"], _a["title"], _a["desc"], _a["answer"], [tuple(x) for x in _a["sections"]], [tuple(x) for x in _a["faq"]],
         [tuple(x) for x in _a["related"]], _a["keyword"], _a.get("keywords", []), _a.get("audience", "Growers, buyers, distributors"),
-        updated=_d.strftime("%-d %B %Y"), sources=_a.get("sources"), date=_a["date"], author="Gafar Laiya and the Gujarat Bio Organics R&amp;D team")
+        updated=_d.strftime("%-d %B %Y"), sources=_a.get("sources"), date=_a["date"], author="Gafar Laiya and the Gujarat Bio Organics R&amp;D team", image=_a.get("image"), image_alt=_a.get("image_alt", ""))
 # newest guides first on the hub
 ARTICLES[:] = [x for x in ARTICLES if x[0] in {"/resources/" + a["slug"] for a in _AUTO}] + [x for x in ARTICLES if x[0] not in {"/resources/" + a["slug"] for a in _AUTO}]
 

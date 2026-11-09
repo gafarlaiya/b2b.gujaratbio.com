@@ -337,3 +337,4 @@ body.has-bar .chat-launch{bottom:78px}
 .ck{position:fixed;left:1rem;bottom:1rem;z-index:60;max-width:26rem;background:#fff;color:#1b1b1b;border:1px solid #cfd4cb;border-radius:10px;padding:1rem;box-shadow:0 8px 30px rgba(0,0,0,.18);font-size:.95rem}
 .ck p{margin:0 0 .8rem}.ck a{color:#0f5d4f;text-decoration:underline}.ck div{display:flex;gap:.6rem}.ck .btn{padding:.5rem 1rem;font-size:.95rem}
 @media(max-width:600px){.ck{left:.6rem;right:.6rem;max-width:none;bottom:5rem}}
+.art-fig{margin:0 0 1.2rem}.art-fig img{width:100%;height:auto;border-radius:10px;display:block}.art-fig figcaption{font-size:.75rem;color:#7a6f66;margin-top:.3rem}
