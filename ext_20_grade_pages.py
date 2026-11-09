@@ -41,7 +41,7 @@ for g, n, f in GRADES:
     desc = f"{n} ({fw}) from Gujarat Bio Organics, Gujarat. Schedule VI grade under our Gujarat NOC. Bulk, private label, export. No MOQ."
     if len(desc) > 160:
         desc = f"{n} ({fw}): Schedule VI grade made in Gujarat. Bulk, private label and export. No MOQ."
-    page(p, title, desc, body, trail, [product_ld(p, display, note, gi["cat_name"]), faq_ld(faq)], "0.7",
+    page(p, title, desc, body, trail, [faq_ld(faq)], "0.7",
          f"/assets/img/{image}.webp" if image else None)
     base = n.lower().replace("%", "").replace("(", "").replace(")", "").replace(",", "")
     kw(p, f"{base} {fw if f != LAF else ''}".strip(), [f"{base} manufacturer", f"{base} price", f"{base} uses", f"{base} supplier india"],
@@ -75,7 +75,7 @@ for b in BIOS:
     _c = [f"{b} Manufacturer India | GBO", f"{b} Manufacturer | GBO", f"{b} | GBO"] if "biofertiliser" in b.lower() else [f"{b} Biofertiliser Manufacturer | GBO", f"{b} Biofertiliser | GBO"]
     title = next((x for x in _c if len(x) <= 60), _c[-1])
     desc = f"{b} biofertiliser ({role.lower()}) made in Gujarat. Schedule III, Gujarat NOC. Bulk, private label and export."
-    page(p, title, desc, body, trail, [product_ld(p, f"{b} biofertiliser", desc_txt, "Biofertiliser"), faq_ld(faq)], "0.6")
+    page(p, title, desc, body, trail, [faq_ld(faq)], "0.6")
     bl = b.lower().replace("(kmb)", "").strip()
     kw(p, f"{bl} biofertilizer", [f"{bl} biofertilizer manufacturer", f"{bl} uses", f"{bl} for crops", f"liquid {bl}"],
        [q for q, _ in faq], "Commercial", "Distributors, brands, growers")

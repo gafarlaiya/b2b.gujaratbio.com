@@ -80,6 +80,8 @@ PRICE_A = ("Price depends on the grade and concentration, the form (liquid, powd
            "and, for export, the Incoterm and destination port. We do not publish a price list because bulk, private-label and retail "
            "packs are priced differently. Send the grade, quantity and destination and we reply with a quote, usually within one working day.")
 
+# Not used on pages: prices are on quote and there are no public reviews, so Google flags Product items as invalid
+# (missing offers / review / aggregateRating). Kept for reference only.
 def product_ld(path, name, desc, category):
     return {"@context": "https://schema.org", "@type": "Product", "name": name, "description": desc,
             "category": category, "url": SITE + path, "brand": {"@type": "Brand", "name": "Gujarat Bio Organics"},
