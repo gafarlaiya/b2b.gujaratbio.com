@@ -2198,6 +2198,208 @@
   "audience": "Brand owners, distributors"
  },
  {
+  "path": "/resources/mango-pre-flowering-dealer-planning",
+  "primary": "mango pre-flowering planning for dealers",
+  "secondary": [
+   "mango flowering Gujarat dealers",
+   "mango stock planning agri input",
+   "Kesar mango flowering time",
+   "mango panicle stage advice",
+   "co-operative mango input planning"
+  ],
+  "questions": [
+   "When should a Gujarat dealer stock for mango flowering?",
+   "Should dealers give growers a mango spray schedule?",
+   "Can I sell biostimulant stock made under an old provisional certificate?",
+   "Will seaweed extract make mango trees flower?",
+   "Why do flowering dates shift so much between seasons?"
+  ],
+  "intent": "Informational",
+  "audience": "Dealers, co-operatives, agronomists and agri-input marketers in Gujarat and western India"
+ },
+ {
+  "path": "/resources/biostimulant-dealer-checks-before-stocking-hindi",
+  "primary": "बायोस्टिमुलेंट डीलर चेकलिस्ट",
+  "secondary": [
+   "biostimulant dealer checklist hindi",
+   "FCO अनुसूची VI बायोस्टिमुलेंट सूची",
+   "G3 certificate biostimulant अमान्य",
+   "बायोस्टिमुलेंट स्टॉक से पहले जाँच",
+   "biostimulant licence dealer hindi"
+  ],
+  "questions": [
+   "क्या G3 सर्टिफिकेट वाला बायोस्टिमुलेंट अब बेच सकते हैं?",
+   "अनुसूची VI में अभी कितने उत्पाद हैं?",
+   "पहले से रखे पुराने स्टॉक का क्या करें?",
+   "क्या गुजरात की NOC दूसरे राज्य में भी चलेगी?",
+   "क्या किसान को उपज का आंकड़ा बता सकते हैं?"
+  ],
+  "intent": "Informational",
+  "audience": "हिंदी भाषी कृषि इनपुट डीलर, वितरक और सहकारी समितियां"
+ },
+ {
+  "path": "/resources/provisional-biostimulant-registration-ended-options",
+  "primary": "biostimulant provisional registration ended",
+  "secondary": [
+   "G3 certificate biostimulant expired",
+   "biostimulant provisional registration invalid 17 June 2025",
+   "Schedule VI inclusion data biostimulant",
+   "biostimulant old stock after provisional registration",
+   "biostimulant brand owner options FCO"
+  ],
+  "questions": [
+   "Is my G3 certificate still valid?",
+   "How many biostimulants are in Schedule VI now?",
+   "Can I sell the old stock I still hold?",
+   "Can I keep selling while I generate data?",
+   "What data is needed for Schedule VI?",
+   "Does the state partner programme come with a brand?"
+  ],
+  "intent": "Informational",
+  "audience": "Biostimulant brand owners and marketers"
+ },
+ {
+  "path": "/resources/seaweed-extract-heat-drought-salinity-evidence",
+  "primary": "does seaweed extract help crops under stress",
+  "secondary": [
+   "seaweed extract drought stress evidence",
+   "seaweed extract heat stress research",
+   "seaweed extract salinity tolerance studies",
+   "biostimulant claims wording India",
+   "Kappaphycus drought study"
+  ],
+  "questions": [
+   "Does seaweed extract work under drought?",
+   "Is there field evidence for seaweed under stress?",
+   "Can a dealer say seaweed works in saline soil?",
+   "Should seaweed be sprayed before heat or drought?",
+   "Can I quote a percentage from a research paper in my leaflet?",
+   "Is gentle extraction always better for stress?"
+  ],
+  "intent": "Informational",
+  "audience": "Agronomists, dealers, marketers and brand owners"
+ },
+ {
+  "path": "/resources/seaweed-extract-test-report-guide",
+  "primary": "seaweed extract test report",
+  "secondary": [
+   "seaweed extract certificate of analysis",
+   "how to read COA seaweed extract",
+   "seaweed extract quality test",
+   "alginic acid mannitol seaweed test",
+   "Schedule VI seaweed extract specification"
+  ],
+  "questions": [
+   "What is an acceptable pH for seaweed extract?",
+   "Does a seaweed extract need to show alginic acid on its report?",
+   "Why do two reports for the same grade show different pH?",
+   "How many batches should I ask to see?",
+   "Does a good test report mean the product will perform?"
+  ],
+  "intent": "Informational",
+  "audience": "Marketers, dealers, brand owners, blenders, co-operatives, importers and agronomists buying seaweed extract"
+ },
+ {
+  "path": "/resources/seaweed-extraction-methods-compared",
+  "primary": "seaweed extraction methods",
+  "secondary": [
+   "alkaline vs acid seaweed extraction",
+   "enzyme assisted seaweed extraction",
+   "seaweed extract composition",
+   "mild seaweed extraction",
+   "seaweed extract polysaccharides"
+  ],
+  "questions": [
+   "Which seaweed extraction method is best?",
+   "Does alkaline extraction destroy seaweed extract?",
+   "Is enzyme extraction always gentler?",
+   "Why might potassium be higher in an alkaline seaweed extract?",
+   "Is a water extract just weaker?"
+  ],
+  "intent": "Informational",
+  "audience": "Marketers, dealers, brand owners, blenders, co-operatives, importers and agronomists"
+ },
+ {
+  "path": "/resources/98-percent-humic-acid-label-meaning",
+  "primary": "98% humic acid meaning",
+  "secondary": [
+   "humic acid test method",
+   "how is humic acid measured",
+   "potassium humate 98 solubility",
+   "ISO 19822 humic acid",
+   "humic acid label claim"
+  ],
+  "questions": [
+   "Does 98% humic acid mean the bag is nearly pure humic acid?",
+   "Which test should a buyer ask for?",
+   "Can a colour-based humic test be trusted?",
+   "Is high solubility the same as high humic content?",
+   "Does Schedule VI settle what a 98% label means?"
+  ],
+  "intent": "Informational",
+  "audience": "Marketers, dealers, brand owners, blenders, co-operatives, importers and agronomists buying humic materials"
+ },
+ {
+  "path": "/resources/whats-inside-seaweed-extract",
+  "primary": "what is in seaweed extract",
+  "secondary": [
+   "seaweed extract composition",
+   "alginate laminarin fucoidan in seaweed",
+   "mannitol in seaweed extract",
+   "betaines in seaweed extract",
+   "seaweed extract buyer guide"
+  ],
+  "questions": [
+   "Does a higher seaweed extract percentage mean more alginate or laminarin?",
+   "Do red seaweed extracts contain alginates?",
+   "Can I compare cytokinin or auxin figures between two suppliers?",
+   "Is alkaline extraction bad?",
+   "Does Schedule VI listing tell me the compound content?"
+  ],
+  "intent": "Informational",
+  "audience": "Agri-input marketers, dealers, brand owners, blenders, co-operatives, importers and agronomists"
+ },
+ {
+  "path": "/resources/fco-forms-for-biostimulant-manufacturers",
+  "primary": "FCO forms for biostimulant manufacturers",
+  "secondary": [
+   "Form G biostimulant application",
+   "Form G-3 provisional certificate",
+   "clause 20C Fertiliser Control Order",
+   "Form A1 and Form O fertiliser",
+   "Schedule VI inclusion data"
+  ],
+  "questions": [
+   "Which form gets a new biostimulant into Schedule VI?",
+   "Is a Form G-3 still valid?",
+   "Does a brand owner who does not manufacture file Form G?",
+   "What is Form O for?",
+   "Does Schedule VI listing replace state authorisation?"
+  ],
+  "intent": "Informational",
+  "audience": "Biostimulant manufacturers, importers, brand owners, marketers and dealers in India"
+ },
+ {
+  "path": "/resources/kappaphycus-gracilaria-sap-indian-research",
+  "primary": "Kappaphycus sap research India",
+  "secondary": [
+   "K-sap field trials India",
+   "Gracilaria sap biostimulant",
+   "CSMCRI seaweed sap",
+   "seaweed sap maize research",
+   "seaweed cultivation India raw material"
+  ],
+  "questions": [
+   "Does Indian research show that K-sap increases yield?",
+   "Is Gracilaria sap as well studied as Kappaphycus sap?",
+   "Can I print a research yield figure on my label or brochure?",
+   "Does a 10% sap spray equal a 10% seaweed grade?",
+   "Is enough Kappaphycus and Gracilaria grown in India?"
+  ],
+  "intent": "Informational",
+  "audience": "Marketers, brand owners, dealers, blenders, co-operatives, importers and agronomists"
+ },
+ {
   "path": "/resources",
   "primary": "biostimulant guide",
   "secondary": [

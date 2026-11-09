@@ -1,0 +1,127 @@
+{
+ "slug": "98-percent-humic-acid-label-meaning",
+ "date": "2026-11-09",
+ "h1": "The '98% humic acid' on your bag may not mean what you think",
+ "title": "What a 98% humic acid claim can mean | GBO",
+ "desc": "A 98% humic acid claim can mean different things. Ask how humic was measured and by which method, then compare products on the same method.",
+ "answer": "A 98% humic acid claim may not describe humic acid content at all. Ask how the humic was measured, and by which method, then compare products on the same method. The figure can reflect solubility, or a test that reads high, so it may not be comparable across bags.",
+ "sections": [
+  [
+   "what-the-number-measures",
+   "What the number may be measuring",
+   "<p>A percentage on a humic bag needs two more facts: of what, and by which method. Without them the figure cannot be read. It may be a humic acid content. It may be a humic and fulvic total. It may be how much of the powder dissolves in water.</p><div class=\"tbl-wrap\"><table class=\"grades data\"><thead><tr><th>The number refers to</th><th>What it tells you</th><th>What it does not tell you</th></tr></thead><tbody><tr><td data-label=\"The number refers to\">Humic acid, ash-free, by weight</td><td data-label=\"What it tells you\">The humic acid left once mineral matter is excluded</td><td data-label=\"What it does not tell you\">How the product will perform in a field</td></tr><tr><td data-label=\"The number refers to\">Humic plus fulvic total</td><td data-label=\"What it tells you\">Both fractions counted together</td><td data-label=\"What it does not tell you\">How much of that is humic acid</td></tr><tr><td data-label=\"The number refers to\">Water solubility</td><td data-label=\"What it tells you\">How much of the material dissolves</td><td data-label=\"What it does not tell you\">How much of what dissolved is humic acid</td></tr><tr><td data-label=\"The number refers to\">A colour-based test reading</td><td data-label=\"What it tells you\">A result from a colour method</td><td data-label=\"What it does not tell you\">A reliable humic acid value, in the comparison described below</td></tr></tbody></table></div><p>A figure near 98 can be true and still be about something else. A study in <a href=\"https://agris.fao.org/search/en/records/675985eac7a957febdfa87dd\">Soil &amp; Environment</a> compared four commercial humates. Their solubility in water ran from 30.2% to 98.2%. The share of their total carbon in the humic acid fraction ran from 40.3% to 77.5%. Those are ranges across the four, so they do not show both numbers for one sample. They do show that solubility and humic content are separate measurements.</p>"
+  ],
+  [
+   "why-methods-disagree",
+   "Why methods give different numbers",
+   "<p>Humic acid is separated by a procedure. In the <a href=\"https://humic-substances.org/isolation-of-ihss-soil-fulvic-and-humic-acids/\">isolation steps</a> published by the International Humic Substances Society (IHSS), a sample is extracted and the liquid is acidified to pH 1. The solid that forms is the humic acid fraction. The fulvic fraction stays in the liquid and is then purified on a resin. A test that takes a different route may report a different number.</p><p><a href=\"https://agris.fao.org/search/en/records/65dfd3bd7c7033e84bef1256\">Lamar and Talbot</a> tested this in 2009. They compared two methods with a classical procedure on five raw humate ores and three humate products. The classical procedure used extraction in dilute base, precipitation by acidifying, and an acid wash to remove ash. Against it, a colorimetric method overestimated humic acid by 120%. A method from the California Department of Food and Agriculture overestimated it by 52%. The authors concluded that neither gave a reliably accurate value.</p><p>That was eight samples. It does not mean any given bag reads high by those amounts. It means the method can change the answer, sometimes by a lot.</p><p>Standard methods now exist. A <a href=\"https://pubmed.ncbi.nlm.nih.gov/25051616/\">2014 paper in the Journal of AOAC International</a> set out a validated method for humic ores and commercial products, adapted from IHSS guidelines. It differs from earlier methods because it measures humic and fulvic acids by weight on an ash-free basis. <a href=\"https://www.iso.org/standard/66271.html\">ISO 19822:2018</a> is a published international procedure for humic acids and hydrophobic fulvic acids in dry and liquid fertilizer ingredients, soil amendments and geological deposits.</p><p>Ash is one reason the basis matters. In a <a href=\"https://agronomy.emu.ee/wp-content/uploads/2020/07/AR2020_Vol18No3_Klavins.pdf\">2020 study in Agronomy Research</a>, ash reached 35% in some industrially produced humic materials and averaged 6%. The same paper found that most substances offered on the market were mixtures of humic and fulvic acids.</p>"
+  ],
+  [
+   "potassium-humate-number",
+   "Soluble potassium humate and the humic number",
+   "<p>Our guide to <a href=\"/resources/potassium-humate-vs-humic-acid\">potassium humate and humic acid</a> covers the chemistry and the uses. The buyer's point here is narrower. Potassium humate is a salt, so the weight in the bag includes potassium as well as humic material. An ash-free humic acid test counts only the humic portion. So a fully soluble potassium humate may still report a humic acid content below its solubility figure. This is reasoning from how the methods work, not a measured result for any product.</p><p>\"98% soluble\" and \"98% humic acid\" are different statements. Do not accept one when you are paying for the other. Ask for both numbers, each with its method.</p><p>How often does a 98% claim turn out to be a solubility figure? We found no published audit of humic bags in India, so we cannot say. What is published is narrower. The Soil &amp; Environment authors wrote that humates in the market vary widely and called for quality monitoring. The <a href=\"https://agronomy.emu.ee/wp-content/uploads/2020/07/AR2020_Vol18No3_Klavins.pdf\">Agronomy Research</a> authors wrote that there are no strict definitions of humic substances or regulations of their quality control.</p>"
+  ],
+  [
+   "schedule-vi",
+   "What Schedule VI can and cannot settle",
+   "<p>India regulates biostimulant quality under clause 20C of the Fertiliser Control Order. Schedule VI has nine categories. <a href=\"https://www.pib.gov.in/PressReleasePage.aspx?PRID=2165081&amp;reg=48&amp;lang=2\">Category (h)</a> reads \"Humic &amp; fulvic acid and their derivatives\". As of September 2025, the government had included 146 biostimulant products in Schedule VI. The list can change by amendment, so check the latest Gazette.</p><p>This guide does not quote a numeric humic limit from Schedule VI. We quote a specification only from official text we could open, and we could not open the current Gazette entries for this piece. Read the entry for your exact grade in the latest Gazette, with any method named there. Then match it to the label and the test report. Our <a href=\"/fco-schedule-vi-biostimulants\">Schedule VI overview</a> is a starting point, not a substitute.</p><p>Official work on testing has been reported. A <a href=\"https://www.pib.gov.in/PressReleasePage.aspx?PRID=2112403&amp;reg=48&amp;lang=2\">PIB release of 18 March 2025</a> lists, among the research of the National Institute of Plant Health Management, validation of protocols for analysing quality parameters of humic acid and fulvic acid formulations.</p><p>Whether a particular label meets the rules is a legal question as well as a lab question. Check with your state agriculture department.</p>"
+  ],
+  [
+   "purchase-spec",
+   "What to write into your purchase specification",
+   "<ul><li><strong>Name what is measured.</strong> Give humic acid, humic plus fulvic, and solubility a separate line each.</li><li><strong>Name the method beside every number.</strong> Ask whether it is weight-based or colour-based, and whether it is a published method.</li><li><strong>Ask for the basis.</strong> Is the figure ash-free or ash-included? Is it as received or on a dry basis?</li><li><strong>Ask for the batch report.</strong> Get the report for the lot you are buying, and ask which lab ran it.</li><li><strong>Compare on one method.</strong> If two offers use different methods, the numbers cannot be ranked. Send both samples to one lab and ask for one method.</li><li><strong>Price the humic, not the powder.</strong> Work out the cost per kg of humic acid on the agreed method.</li><li><strong>Check the grade name.</strong> The label should carry the exact grade name you are buying, and it should match the Gazette entry.</li></ul><p>A dealer or marketer can use the same list before putting a number on a poster. If you cannot say what the number measures, it may be safer not to print it.</p>"
+  ],
+  [
+   "from-our-plant",
+   "What we can say from our own plant",
+   "<p>Gujarat Bio Organics extracts humic in-house at its own plant at GIDC Shihor, Bhavnagar, with a mild process that avoids harsh chemicals, very high pH and heat. The plant can make 100 KL of liquid and 2,500 t of solid a month. We have worked with farmers since 2006. We hold Gujarat NOCs for 36 FCO Schedule VI biostimulant grades and 11 biofertiliser types.</p><p>Our humic grades are listed by form and percentage, for example <a href=\"/products/potassium-humate-49-powder\">potassium humate 49% powder</a>, <a href=\"/products/humic-acid-51-granular\">humic acid 51% granular</a> and <a href=\"/products/humic-and-fulvic-acid-76-powder\">humic and fulvic acid 76% powder</a>. We do not list a 98% grade. Put the questions above to every supplier, us included.</p>"
+  ]
+ ],
+ "faq": [
+  [
+   "Does 98% humic acid mean the bag is nearly pure humic acid?",
+   "Not necessarily. The figure may refer to solubility or to a combined total. Ask what was measured and by which method before you read it as humic acid content."
+  ],
+  [
+   "Which test should a buyer ask for?",
+   "Ask for a named, published method and use one method for every offer. A weight-based, ash-free method for humic ores and commercial products was published in the Journal of AOAC International in 2014, and ISO 19822:2018 is a published international procedure."
+  ],
+  [
+   "Can a colour-based humic test be trusted?",
+   "In one published comparison of eight samples, a colorimetric method overestimated humic acid by 120% against a classical procedure. The authors said it did not give a reliably accurate value. Ask for the method used on your batch."
+  ],
+  [
+   "Is high solubility the same as high humic content?",
+   "No. Solubility tells you how much dissolves. It does not tell you how much of that is humic acid. Ask for both numbers, each with its method."
+  ],
+  [
+   "Does Schedule VI settle what a 98% label means?",
+   "Not by itself. Read the entry for your exact grade in the latest Gazette, then match it to the label and the test report. For a legal view on a label, check with your state agriculture department."
+  ]
+ ],
+ "related": [
+  [
+   "/resources/potassium-humate-vs-humic-acid",
+   "Potassium humate vs humic acid",
+   ""
+  ],
+  [
+   "/resources/biostimulant-label-and-documents-checklist",
+   "Biostimulant label and documents checklist",
+   ""
+  ],
+  [
+   "/resources/choosing-a-biostimulant-manufacturer-checklist",
+   "Choosing a biostimulant manufacturer",
+   ""
+  ],
+  [
+   "/humic-acid-manufacturer-india",
+   "All humic grades",
+   ""
+  ]
+ ],
+ "keyword": "98% humic acid meaning",
+ "keywords": [
+  "humic acid test method",
+  "how is humic acid measured",
+  "potassium humate 98 solubility",
+  "ISO 19822 humic acid",
+  "humic acid label claim"
+ ],
+ "audience": "Marketers, dealers, brand owners, blenders, co-operatives, importers and agronomists buying humic materials",
+ "sources": [
+  [
+   "Lamar and Talbot (2009), Critical comparison of humic acid test methods, Communications in Soil Science and Plant Analysis 40(15)",
+   "https://agris.fao.org/search/en/records/65dfd3bd7c7033e84bef1256"
+  ],
+  [
+   "A new standardized method for quantification of humic and fulvic acids in humic ores and commercial products, J AOAC Int 97(3), 2014",
+   "https://pubmed.ncbi.nlm.nih.gov/25051616/"
+  ],
+  [
+   "ISO 19822:2018, Fertilizers and soil conditioners: determination of humic and hydrophobic fulvic acids concentrations in fertilizer materials",
+   "https://www.iso.org/standard/66271.html"
+  ],
+  [
+   "International Humic Substances Society, Isolation of IHSS soil fulvic and humic acids",
+   "https://humic-substances.org/isolation-of-ihss-soil-fulvic-and-humic-acids/"
+  ],
+  [
+   "Characterization of commercial humic acid samples and their impact on growth of fungi and plants, Soil & Environment 32(1), 2013",
+   "https://agris.fao.org/search/en/records/675985eac7a957febdfa87dd"
+  ],
+  [
+   "Klavins et al. (2020), A comparative study of the properties of industrially produced humic substances, Agronomy Research 18(3)",
+   "https://agronomy.emu.ee/wp-content/uploads/2020/07/AR2020_Vol18No3_Klavins.pdf"
+  ],
+  [
+   "PIB, Regulation of biostimulant products under Fertilizer Control Order (FCO), 1985, 9 September 2025",
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2165081&reg=48&lang=2"
+  ],
+  [
+   "PIB, New research initiatives by ICAR-NIPHM, 18 March 2025",
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2112403&reg=48&lang=2"
+  ]
+ ]
+}

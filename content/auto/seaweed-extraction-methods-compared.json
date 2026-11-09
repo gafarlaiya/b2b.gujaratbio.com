@@ -1,0 +1,143 @@
+{
+ "slug": "seaweed-extraction-methods-compared",
+ "date": "2026-11-09",
+ "h1": "Alkaline, acid, water or enzyme seaweed extract: what really differs in the bottle",
+ "title": "Seaweed extraction methods compared | GBO",
+ "desc": "How alkaline, acid, water, enzyme and physical extraction change what ends up in a seaweed extract, and what the research has not settled.",
+ "answer": "Extraction decides which compounds reach the bottle and in what form. Alkali and acid break polysaccharides into smaller pieces and change polyphenols. Water pulls out what dissolves, with little selectivity. Enzymes, ultrasound and microwave can also shorten polysaccharide chains. No method is settled as best for crops.",
+ "sections": [
+  [
+   "why-two-extracts-differ",
+   "Why two extracts of one seaweed can differ",
+   "<p>The species on a label tells you where a product started. It does not tell you what is in it. A <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6548832\">2019 review of Ascophyllum nodosum</a> says the bioactivity and composition of these products are not all identical and depend on the extraction method. A <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8000310\">2021 review of seaweed extracts</a> says the same for seaweeds in general: method has a great influence on composition.</p><p>A <a href=\"https://research.ucc.ie/en/publications/comparative-transcriptome-analysis-of-two-ascophyllum-nodosum-ext/\">2016 study</a> shows how large the gap can be. Two Ascophyllum extracts were tested on the model plant Arabidopsis. Their polyphenol levels differed four-fold, and they changed gene expression differently. The abstract does not tie this to one process step. Its authors call standardising composition a challenge.</p>"
+  ],
+  [
+   "what-each-method-does",
+   "What each method does to the compounds",
+   "<p>The table draws on reviews by <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6548832\">Shukla and colleagues</a>, <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8000310\">Ali and colleagues</a>, <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7143672\">Dobrinčić and colleagues</a>, <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7070867\">Jönsson and colleagues</a> and <a href=\"https://www.mdpi.com/1660-3397/23/9/366/xml\">Cardoso and colleagues</a>, a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11278442\">2024 enzyme study</a> and a <a href=\"https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1273355/pdf\">CSIR-CSMCRI study</a>. Most of this work is on specific species and specific polysaccharides, so treat each row as a direction, not a rule for every seaweed.</p><div class=\"tbl-wrap\"><table class=\"grades data\"><thead><tr><th>Method</th><th>Conditions reported</th><th>What it does to the compounds</th><th>Caution</th></tr></thead><tbody><tr><td data-label=\"Method\">Alkaline (NaOH or KOH)</td><td data-label=\"Conditions reported\">About 70 to 100°C for Ascophyllum</td><td data-label=\"What it does to the compounds\">Breaks complex polysaccharides into smaller oligomers. Acts on polyphenols. Forms compounds not present in the raw seaweed.</td><td data-label=\"Caution\">Small molecules such as hormones may be significantly degraded.</td></tr><tr><td data-label=\"Method\">Acid (sulfuric or hydrochloric)</td><td data-label=\"Conditions reported\">About 40 to 50°C for 30 minutes in one Ascophyllum method</td><td data-label=\"What it does to the compounds\">Removed complex phenolics and raised polysaccharide breakdown. Turns alginate into insoluble alginic acid.</td><td data-label=\"Caution\">Alginate can leave with the solid residue, and polysaccharide chains may be cut.</td></tr><tr><td data-label=\"Method\">Water</td><td data-label=\"Conditions reported\">Dried meal blended and hydrated, or hot water</td><td data-label=\"What it does to the compounds\">Hot water dissolves fucoidan, alginate and laminarin together. Extracts are reportedly rich in phytohormone-like activity.</td><td data-label=\"Caution\">Poor selectivity. Hot solvents and long times can degrade active compounds.</td></tr><tr><td data-label=\"Method\">Enzyme</td><td data-label=\"Conditions reported\">Carbohydrases and proteases</td><td data-label=\"What it does to the compounds\">Break the cell wall. Released more soluble protein and reducing sugars than solvent extraction in two seaweeds.</td><td data-label=\"Caution\">Non-specific enzymes can degrade targets. Seaweed-specific enzymes are hard to obtain.</td></tr><tr><td data-label=\"Method\">Ultrasound</td><td data-label=\"Conditions reported\">Cavitation breaks cells</td><td data-label=\"What it does to the compounds\">Moves compounds from cell to solvent. Lowered average polysaccharide size in Undaria pinnatifida.</td><td data-label=\"Caution\">Listed risk of degradation, yet one study observed none.</td></tr><tr><td data-label=\"Method\">Microwave</td><td data-label=\"Conditions reported\">Fast, with less material use</td><td data-label=\"What it does to the compounds\">Reported to give lower molecular weight polysaccharides.</td><td data-label=\"Caution\">Sulfate results conflict between studies.</td></tr><tr><td data-label=\"Method\">Minimal homogenate</td><td data-label=\"Conditions reported\">Sun-dried, rehydrated, filtered, spray-dried</td><td data-label=\"What it does to the compounds\">Keeps a whole water-soluble fraction with no added acid or alkali.</td><td data-label=\"Caution\">The study tested doses, not other processes.</td></tr></tbody></table></div><p>Note what the table shows about mild methods. Enzyme treatment is gentle in temperature, yet one study in the <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7143672\">Dobrinčić review</a> found it lowered polysaccharide molecular weight in Ecklonia radiata compared with a conventional control. Shorter chains are not the mark of harsh chemistry alone.</p>"
+  ],
+  [
+   "what-chemistry-adds",
+   "What a chemical step adds to the analysis",
+   "<p>Alkali and acid do more than extract. In a <a href=\"https://mdpi.com/2073-4395/15/5/1138\">2025 tomato pot study</a> of the brown seaweed Cystoseira barbata, the alkali and acid extracts had higher potassium and sulfur than the water extract. The authors attribute this to the potassium hydroxide and sulfuric acid added during preparation.</p><p>For a buyer, that matters. A high potassium figure on a certificate of analysis may partly reflect the process chemical, not the seaweed. The same care applies to red seaweeds: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7070867\">Jönsson and colleagues</a> note that alkali treatment of carrageenan removes some sulfate ester groups.</p><p>Reviews also describe a trade-off, not simple damage. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8000310\">Ali and colleagues</a> write that polysaccharides are converted into oligomers that are highly bioactive in plants, while hormones may be degraded. Both can happen in one tank.</p>"
+  ],
+  [
+   "gentle-versus-harsh",
+   "Does milder mean more active? The studies disagree",
+   "<p>The honest answer is that it depends on what was measured.</p><ul><li><strong>Stronger conditions gave more activity in one test.</strong> A <a href=\"https://link.springer.com/doi/10.1007/s10811-014-0237-2\">study of Macrocystis pyrifera</a> compared alkaline extraction at pH 8 to 12 and 40 to 80°C. Auxin-type activity in a bioassay peaked at pH 11 and 80°C. Tomato seedlings grew fastest with the pH 12, 80°C extract.</li><li><strong>Heat raised polyphenols in another.</strong> Baltic seaweeds <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4913069\">boiled for 30 minutes</a> gave more polyphenols than soaking for two days. Mineral levels were similar. Garden cress in Petri dishes was the test plant.</li><li><strong>Water won in wheat seedlings.</strong> In a <a href=\"https://pubmed.ncbi.nlm.nih.gov/39191702/\">2024 study</a> of Cystoseira barbata, water, alkali and acid extracts had different compositions. The water extract at its highest rate gave the most promising seedling results.</li><li><strong>Alkali and acid did better on tomato growth.</strong> In the <a href=\"https://mdpi.com/2073-4395/15/5/1138\">same group's tomato pots</a>, alkali and acid extracts raised stem length and yield, and water did not change stem length. Only the water extract significantly raised lycopene.</li></ul><p>That tomato comparison has limits. The water extract came from dried biomass and the others from fresh. Water went on at 100 mL per pot and the others at 30 mL. There were five pots per treatment. These results describe those setups and are no promise for any product.</p>"
+  ],
+  [
+   "what-is-not-settled",
+   "What is not settled",
+   "<ul><li><strong>No best method.</strong> A <a href=\"https://www.mdpi.com/1660-3397/23/9/366/xml\">2025 review</a> states there is no universally effective technique, partly because seaweed biomass varies so much.</li><li><strong>Yield comparisons are weak.</strong> <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7070867\">Jönsson and colleagues</a> point out that yield figures ignore differences between species, and that structural integrity matters as much as yield.</li><li><strong>Hormone claims are hard to pin down.</strong> <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6548832\">Shukla and colleagues</a> say auxin variation is likely linked to extraction and processing, alongside origin and season. A bioassay shows activity. It does not name the molecule responsible.</li><li><strong>Conflicting chemistry.</strong> Microwave studies report both higher and lower sulfate and molecular weight. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7143672\">Dobrinčić and colleagues</a> link this to protocol, species, origin and harvest time.</li><li><strong>Enzyme evidence is thin for biostimulants.</strong> The 2019 Ascophyllum review found no publications on enzyme extraction of that species. The 2024 enzyme study still calls seaweed research on the method limited.</li><li><strong>Field evidence is missing.</strong> <a href=\"https://www.mdpi.com/1660-3397/23/9/366/xml\">Cardoso and colleagues</a> say most newer technologies have not met large-scale implementation. The tomato study authors say field validation is still needed.</li></ul>"
+  ],
+  [
+   "what-to-ask-gbo",
+   "What to ask, and what GBO can say",
+   "<p>Since no method wins on paper, ask for process facts and batch data. Ask which species and whether the biomass was fresh or dried. Ask which acid, alkali or enzyme was used, at what pH, temperature and time. Ask whether potassium or sulfur was added in processing. Compare batches on the same tests, and run your own comparison on your target crop before you commit. Our <a href=\"/resources/kappaphycus-vs-ascophyllum-vs-sargassum\">species comparison</a> covers the raw material side.</p><p>GBO runs its own plant at GIDC Shihor, Bhavnagar, with 100 KL liquid and 2,500 t solid a month, and has worked with farmers since 2006. We use mild in-house extraction of seaweed without harsh chemicals, very high pH or heat. That describes how we make it. It is not proof that a mild extract performs better in the field than an alkaline one, and the studies above do not show that. See our <a href=\"/seaweed-extract-manufacturer-india\">seaweed extract range</a> and <a href=\"/manufacturing-facility\">manufacturing facility</a>.</p>"
+  ]
+ ],
+ "faq": [
+  [
+   "Which seaweed extraction method is best?",
+   "The published evidence does not name one. A 2025 review says there is no universally effective technique. Results depend on the species, the compounds you care about and the test used."
+  ],
+  [
+   "Does alkaline extraction destroy seaweed extract?",
+   "It changes it. Reviews report that alkali breaks polysaccharides into smaller oligomers, acts on polyphenols and may degrade small molecules such as hormones. One study on Macrocystis pyrifera still found its highest bioassay activity at high pH."
+  ],
+  [
+   "Is enzyme extraction always gentler?",
+   "It avoids harsh chemicals, but it can still shorten polysaccharide chains. Non-specific enzymes can also degrade target compounds. Research on seaweed is described as limited, and seaweed-specific enzymes are hard to obtain."
+  ],
+  [
+   "Why might potassium be higher in an alkaline seaweed extract?",
+   "If potassium hydroxide is used, some potassium comes from the process. One tomato study attributed the higher potassium and sulfur of its alkali and acid extracts to the chemicals added."
+  ],
+  [
+   "Is a water extract just weaker?",
+   "Not on the available evidence. In one wheat seedling study a water extract gave the most promising results. In a tomato pot study alkali and acid extracts did better on stem length and yield. The setups differed."
+  ]
+ ],
+ "related": [
+  [
+   "/resources/kappaphycus-vs-ascophyllum-vs-sargassum",
+   "Kappaphycus vs Ascophyllum vs Sargassum",
+   ""
+  ],
+  [
+   "/resources/how-biostimulants-are-formulated",
+   "How biostimulants are formulated",
+   ""
+  ],
+  [
+   "/seaweed-extract-manufacturer-india",
+   "Seaweed extract manufacturer in India",
+   ""
+  ],
+  [
+   "/quality-compliance",
+   "Quality and compliance",
+   ""
+  ]
+ ],
+ "keyword": "seaweed extraction methods",
+ "keywords": [
+  "alkaline vs acid seaweed extraction",
+  "enzyme assisted seaweed extraction",
+  "seaweed extract composition",
+  "mild seaweed extraction",
+  "seaweed extract polysaccharides"
+ ],
+ "audience": "Marketers, dealers, brand owners, blenders, co-operatives, importers and agronomists",
+ "sources": [
+  [
+   "Shukla et al. 2019, Ascophyllum nodosum-based biostimulants, Frontiers in Plant Science",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC6548832"
+  ],
+  [
+   "Ali, Ramsubhag and Jayaraman 2021, Biostimulant properties of seaweed extracts in plants, Plants",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC8000310"
+  ],
+  [
+   "Goñi et al. 2016, Comparative transcriptome analysis of two Ascophyllum nodosum extract biostimulants, J. Agric. Food Chem.",
+   "https://research.ucc.ie/en/publications/comparative-transcriptome-analysis-of-two-ascophyllum-nodosum-ext/"
+  ],
+  [
+   "Dobrinčić et al. 2020, Advanced technologies for the extraction of marine brown algal polysaccharides, Marine Drugs",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7143672"
+  ],
+  [
+   "Jönsson et al. 2020, Extraction and modification of macroalgal polysaccharides, Molecules",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7070867"
+  ],
+  [
+   "Cardoso, Matos and Afonso 2025, Extraction of marine bioactive compounds from seaweed, Marine Drugs",
+   "https://www.mdpi.com/1660-3397/23/9/366/xml"
+  ],
+  [
+   "Nova et al. 2024, Solvent and enzyme-assisted extracts of Fucus vesiculosus and Porphyra dioica, Marine Drugs",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11278442"
+  ],
+  [
+   "Arikan-Algul et al. 2025, Cystoseira barbata extracts on soil-grown tomato, Agronomy",
+   "https://mdpi.com/2073-4395/15/5/1138"
+  ],
+  [
+   "Mutlu-Durak et al. 2024, Various extracts of Cystoseira barbata on wheat seedlings, Physiologia Plantarum",
+   "https://pubmed.ncbi.nlm.nih.gov/39191702/"
+  ],
+  [
+   "Briceño-Domínguez et al. 2014, Macrocystis pyrifera extracts under different pH and temperature, J. Applied Phycology",
+   "https://link.springer.com/doi/10.1007/s10811-014-0237-2"
+  ],
+  [
+   "Godlewska et al. 2016, Seaweed extraction with water, BioMed Research International",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC4913069"
+  ],
+  [
+   "Vaghela et al. 2023, Minimally processed homogenates of red and brown seaweeds on maize, Frontiers in Plant Science",
+   "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1273355/pdf"
+  ]
+ ]
+}

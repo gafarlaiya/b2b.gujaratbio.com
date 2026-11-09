@@ -1,0 +1,119 @@
+{
+ "slug": "seaweed-extract-test-report-guide",
+ "date": "2026-11-09",
+ "h1": "How do you read a seaweed extract test report, line by line?",
+ "title": "How to read a seaweed extract test report | GBO",
+ "desc": "What pH, density, solids, ash, alginic acid, mannitol and heavy metal lines tell a buyer, and what to ask before you trust a seaweed test report.",
+ "answer": "Read a seaweed extract report in three passes. First confirm the species, grade, batch, lab and date. Then check whether pH, density, solids and ash were measured the same way each batch. Then compare every value with the Gazette entry for that exact grade. A report proves little until that match is made.",
+ "sections": [
+  [
+   "first-check",
+   "First check what the report is about",
+   "<p>A test report only helps if it describes the goods in front of you. Before you look at any value, confirm four things.</p><ul><li><strong>Species and grade.</strong> Species, extract percentage and form should match your order.</li><li><strong>Batch.</strong> The number on the report should match the number on the pack or tanker.</li><li><strong>Lab and date.</strong> Note who tested it, when, and whether that lab belongs to the seller.</li><li><strong>Method.</strong> Each line should name a method. A number with no method cannot be compared.</li></ul><p>The label on its own will not settle this. A <a href=\"https://doi.org/10.3389/fpls.2022.1017925\">study of 20 commercial brown seaweed products</a> found \"great disparity\" between formulations with similar labelling.</p><p>Seaweed extracts fall under the first biostimulant category in <a href=\"/fco-schedule-vi-biostimulants\">Schedule VI</a>, botanical extracts. The <a href=\"https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2165081\">government said in September 2025</a> that 146 products were listed, through notifications in the Gazette of India. That list can change, so check the latest Gazette.</p><p><strong>A plain limit on this guide.</strong> We could not open the Gazette text of a seaweed entry while writing this. So this guide gives no acceptable range for any line. It explains what each line means and what to ask. You must compare each value against the Gazette entry for your exact grade, and check with your state agriculture department. We also cannot say which of the lines below a given entry sets. Findings from studies are not pass marks.</p>"
+  ],
+  [
+   "line-by-line",
+   "The report, line by line",
+   "<div class=\"tbl-wrap\"><table class=\"grades data\"><thead><tr><th>Line</th><th>What it tells you</th><th>What to ask</th></tr></thead><tbody><tr><td data-label=\"Line\">Species and grade</td><td data-label=\"What it tells you\">Which seaweed and which extract strength the report claims to describe.</td><td data-label=\"What to ask\">Is this the exact grade on my order and in the Gazette entry?</td></tr><tr><td data-label=\"Line\">Batch, lab, date</td><td data-label=\"What it tells you\">Whether the report belongs to the goods you are receiving.</td><td data-label=\"What to ask\">Does this batch number match my packs? Who tested it, and when?</td></tr><tr><td data-label=\"Line\">pH</td><td data-label=\"What it tells you\">Whether the liquid is acidic or alkaline. It is a clue to the process.</td><td data-label=\"What to ask\">Was it measured neat or diluted? What is the notified value for this grade?</td></tr><tr><td data-label=\"Line\">Density or specific gravity</td><td data-label=\"What it tells you\">Weight per volume. It links percent by weight to percent by volume.</td><td data-label=\"What to ask\">Is the extract percentage on the report by weight or by volume?</td></tr><tr><td data-label=\"Line\">Total solids or dry matter</td><td data-label=\"What it tells you\">What is left when the water is driven off.</td><td data-label=\"What to ask\">At what temperature, and for how long? What do the last three batches show?</td></tr><tr><td data-label=\"Line\">Moisture (powder, granule)</td><td data-label=\"What it tells you\">The water in a dry product.</td><td data-label=\"What to ask\">Which drying method? Is it the same one used for the dry matter line?</td></tr><tr><td data-label=\"Line\">Ash</td><td data-label=\"What it tells you\">The mineral part left after burning.</td><td data-label=\"What to ask\">At what furnace temperature? Is the value on a dry or as-is basis?</td></tr><tr><td data-label=\"Line\">Alginic acid</td><td data-label=\"What it tells you\">A polysaccharide linked to brown seaweeds.</td><td data-label=\"What to ask\">Which method? If the species is red, what exactly was measured?</td></tr><tr><td data-label=\"Line\">Mannitol</td><td data-label=\"What it tells you\">A sugar alcohol reported in brown seaweeds.</td><td data-label=\"What to ask\">Which method? Is it free mannitol or a total figure?</td></tr><tr><td data-label=\"Line\">Heavy metals</td><td data-label=\"What it tells you\">Whether named elements were tested at all.</td><td data-label=\"What to ask\">Which elements, which instrument, and on what basis? Does the Gazette entry set a limit?</td></tr></tbody></table></div><p>For the wider set of papers to keep on file, see the <a href=\"/resources/biostimulant-label-and-documents-checklist\">label and documents checklist</a>. This guide covers only how to read the report itself.</p>"
+  ],
+  [
+   "physical-lines",
+   "pH, density, solids and ash",
+   "<p><strong>pH.</strong> The same study of 20 products found a wide range of pH. It said this was mainly due to the extraction method and the percentage of algae in the product. It also noted that alkaline media provide high concentrations of potassium. So treat pH as a clue to how the extract was made, not as a quality score.</p><p>Also ask how it was measured. <a href=\"https://link.springer.com/doi/10.1186/s40538-016-0064-6\">A study of plant biostimulant formulations</a> measured pH at 1% concentration of the original product. A reading taken on the neat liquid is a different test, so two such reports cannot be compared.</p><p><strong>Density.</strong> This line matters for arithmetic. If density is above 1, a percent by weight is a smaller number than the percent by volume for the same liquid. Find out which one the extract figure uses before you compare two offers. Compare cost on the same basis too.</p><p><strong>Solids and moisture.</strong> Both come from drying. In that same study, samples were oven dried at 75 °C to constant weight. Another lab may use other conditions, so the method belongs on the report.</p><p><strong>Ash.</strong> That study estimated ash by heating samples overnight in a furnace at 600 °C. Ash is mineral matter. Since alkaline extraction can add potassium, a high ash figure may reflect the process rather than more seaweed.</p><p><strong>Ask for more than one batch.</strong> The researchers repeated dry matter, density and chemical analyses on three production batches to assess consistency. That is a sensible request from any buyer. Raw materials vary, and the same paper says seaweed components may vary with the algal source, the season of collection and the extraction process.</p>"
+  ],
+  [
+   "alginic-mannitol",
+   "Alginic acid and mannitol: check the species first",
+   "<p>These two lines are the easiest to misread, because they depend on the seaweed.</p><p><a href=\"https://www.mdpi.com/1420-3049/25/4/930\">A review of seaweed polysaccharides</a> lists alginate, fucoidan and laminarin in brown seaweed cell walls, and describes mannitol in its account of brown seaweeds. <a href=\"https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.859635/full\">Kappaphycus alvarezii</a> is a red seaweed, and that review of it says it produces relatively pure kappa-carrageenan. So an alginic acid or mannitol figure on a Kappaphycus report deserves a question. Ask what was measured and by which method.</p><p>Within brown seaweeds, a figure for one species is not a benchmark for another. In the 20-product study, alginic acid, mannitol and laminarin were measured by HPLC. Ascophyllum nodosum products were higher in all three than Ecklonia maxima products. The authors linked this to botanical differences, growing conditions and possible differences in processing.</p><p>Process can also change what a test finds. The polysaccharide review notes that alginate can be cleaved in both acidic and alkaline conditions. See how <a href=\"/resources/kappaphycus-vs-ascophyllum-vs-sargassum\">the three main species differ</a>.</p><p><strong>A marker is evidence, not proof.</strong> In the biostimulant formulations study, one humic-based blend with declared algal extracts showed no evidence of seaweed extract except a mannitol marker. The authors said this may be because seaweed was a minor component. They also wrote that optimal physicochemical profiles for specific products are not known. So a good report shows what is in the batch. It does not predict results in the field, and it is not a promise for any product.</p>"
+  ],
+  [
+   "heavy-metals",
+   "Heavy metals: ask, but do not guess the limit",
+   "<p>Seaweed can take up elements from where it grows. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7049257/\">A study of raw pelagic Sargassum on the Mexican Caribbean coast</a> found that element levels varied by place and time. The authors raised a concern that continuous use of that raw biomass as a complementary fertiliser may cause arsenic to accumulate in soil. That is raw beached biomass from one region. It says nothing about any particular extract. It does show why place of harvest and season are fair questions.</p><p>On the report, look for three things: which elements were tested, which instrument was used, and whether values are on a dry or as-is basis. The 20-product study used ICP-OES, and compared nickel and chromium with limits expressed on dry matter under an EU fertiliser regulation. A limit given on dry matter cannot be read against a value on the liquid as supplied.</p><p>Whether a limit applies to your grade depends on the Gazette entry. If you export, the importing country's rule applies as well. If the entry and the report do not line up, do not assume. Check with your state agriculture department.</p>"
+  ],
+  [
+   "gbo",
+   "What our own plant adds to this",
+   "<p>We make seaweed extract ourselves at our <a href=\"/manufacturing-facility\">plant at GIDC Shihor, Bhavnagar</a>, which can produce 100 KL of liquid and 2,500 t of solid a month. We have worked with farmers since 2006. We hold Gujarat NOCs for 36 FCO Schedule VI biostimulant grades and 11 biofertiliser types. Our <a href=\"/seaweed-extract-manufacturer-india\">seaweed grades</a> include Kappaphycus alvarezii, Ascophyllum nodosum and Sargassum tenerrimum.</p><p>We extract seaweed in-house by a mild process, without harsh chemicals, very high pH or heat. We mention it here because the studies above point to process as one reason reports differ between suppliers. Read any supplier's report, ours included, with the method and the Gazette entry beside it. See <a href=\"/quality-compliance\">quality and compliance</a>.</p>"
+  ]
+ ],
+ "faq": [
+  [
+   "What is an acceptable pH for seaweed extract?",
+   "This guide does not give one, because we could not open the Gazette text for a seaweed entry. Use the value in the Gazette entry for your exact grade, and check with your state agriculture department."
+  ],
+  [
+   "Does a seaweed extract need to show alginic acid on its report?",
+   "It depends on the Gazette entry for the grade. Alginate is linked to brown seaweeds, while Kappaphycus is a red seaweed rich in carrageenan, so ask what was measured on a Kappaphycus report."
+  ],
+  [
+   "Why do two reports for the same grade show different pH?",
+   "They may have been measured differently, for example neat or diluted. Research also links pH differences to the extraction method and the percentage of algae in the product. Ask for the method."
+  ],
+  [
+   "How many batches should I ask to see?",
+   "One report describes one batch. In one published study, researchers repeated dry matter, density and chemical analyses on three production batches to assess consistency. Asking for the last three batches is a reasonable start."
+  ],
+  [
+   "Does a good test report mean the product will perform?",
+   "No. A report shows what is in the batch. Researchers note that optimal physicochemical profiles for specific products are not known. Field results vary with crop, soil, water, weather and management."
+  ]
+ ],
+ "related": [
+  [
+   "/resources/biostimulant-formulation-stability-shelf-life-testing",
+   "Biostimulant stability and shelf-life testing",
+   ""
+  ],
+  [
+   "/resources/kappaphycus-vs-ascophyllum-vs-sargassum",
+   "Kappaphycus vs Ascophyllum vs Sargassum",
+   ""
+  ],
+  [
+   "/fco-schedule-vi-biostimulants",
+   "FCO Schedule VI",
+   ""
+  ],
+  [
+   "/quality-compliance",
+   "Quality and compliance",
+   ""
+  ]
+ ],
+ "keyword": "seaweed extract test report",
+ "keywords": [
+  "seaweed extract certificate of analysis",
+  "how to read COA seaweed extract",
+  "seaweed extract quality test",
+  "alginic acid mannitol seaweed test",
+  "Schedule VI seaweed extract specification"
+ ],
+ "audience": "Marketers, dealers, brand owners, blenders, co-operatives, importers and agronomists buying seaweed extract",
+ "sources": [
+  [
+   "Press Information Bureau, Regulation of Biostimulant Products under Fertilizer Control Order (FCO), 1985 (9 Sep 2025)",
+   "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2165081"
+  ],
+  [
+   "Valverde et al., Comparative study of the chemical composition and antifungal activity of commercial brown seaweed extracts, Frontiers in Plant Science 13:1017925 (2022)",
+   "https://doi.org/10.3389/fpls.2022.1017925"
+  ],
+  [
+   "Sharma et al., Physicochemical analyses of plant biostimulant formulations and characterisation of commercial products by instrumental techniques, Chemical and Biological Technologies in Agriculture 3:13 (2016)",
+   "https://link.springer.com/doi/10.1186/s40538-016-0064-6"
+  ],
+  [
+   "Jönsson et al., Extraction and Modification of Macroalgal Polysaccharides for Current and Next-Generation Applications, Molecules 25(4):930 (2020)",
+   "https://www.mdpi.com/1420-3049/25/4/930"
+  ],
+  [
+   "Rupert et al., Carrageenan From Kappaphycus alvarezii (Rhodophyta, Solieriaceae): Metabolism, Structure, Production, and Application, Frontiers in Plant Science 13 (2022)",
+   "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.859635/full"
+  ],
+  [
+   "Element concentrations in pelagic Sargassum along the Mexican Caribbean coast in 2018-2019, PeerJ (2020)",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7049257/"
+  ]
+ ]
+}
