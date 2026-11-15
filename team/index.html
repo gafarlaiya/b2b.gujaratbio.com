@@ -184,6 +184,31 @@ details.box[open] summary{margin-bottom:.6rem}
 .row span:first-child{width:40%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row em{font-style:normal;color:var(--mut);margin-left:auto}
 
+/* orders */
+.odots{display:flex;gap:3px;margin-top:.45rem}
+.odots span{flex:1;font-size:.66rem;text-align:center;color:var(--faint);border-top:3px solid var(--line);padding-top:2px;white-space:nowrap;overflow:hidden}
+.odots span.on{border-top-color:var(--g2);color:var(--g)}
+.okpis .kpi{text-align:left;font:inherit;color:inherit;cursor:pointer}
+.okpis .kpi b{font-size:1.25rem}
+.osteps{list-style:none;margin:0;padding:0 0 0 .2rem}
+.osteps li{position:relative;padding:0 0 .75rem 1.5rem;border-left:2px solid var(--line);margin-left:.45rem}
+.osteps li:last-child{border-left-color:transparent;padding-bottom:0}
+.osteps li::before{content:"";position:absolute;left:-.5rem;top:.1rem;width:.85rem;height:.85rem;border-radius:50%;background:#fff;border:2px solid var(--faint)}
+.osteps li.done::before{background:var(--g2);border-color:var(--g2)}
+.osteps li.done{border-left-color:var(--g2)}
+.osteps b{display:block;font-size:.92rem}
+.osteps span{display:block;font-size:.88rem}
+.osteps small{display:block;font-size:.78rem;color:var(--mut)}
+.obox{border-color:var(--g2);box-shadow:0 0 0 1px var(--g2)}
+.obox .btn.pri{margin-top:.7rem;min-height:46px;width:100%}
+.oitem{display:grid;grid-template-columns:1.1fr .8fr 1fr 40px;gap:.35rem;margin-bottom:.6rem;padding-bottom:.6rem;border-bottom:1px dashed var(--line)}
+.oitem .it_p{grid-column:1/-1}
+@media(min-width:1000px){.okpis{grid-template-columns:repeat(2,1fr)!important}}
+.oitem input{min-width:0;min-height:40px;border:1px solid var(--line);border-radius:10px;padding:.3rem .5rem;background:#fff}
+.ototal{margin-top:.6rem;font-size:.95rem}
+.otab{width:100%;border-collapse:collapse;font-size:.88rem;margin-bottom:.4rem}
+.otab td{padding:.3rem 0;border-bottom:1px solid var(--line)}
+.otab td+td{text-align:right;padding-left:.6rem;white-space:nowrap}
 #toast{position:fixed;bottom:calc(84px + var(--safe-b));left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:.55rem 1rem;border-radius:10px;z-index:9;font-size:.9rem;box-shadow:0 6px 20px rgba(0,0,0,.18);max-width:90vw}
 
 /* area partner: only their own leads */
@@ -205,7 +230,7 @@ body.partner #out{display:inline-flex!important}
   #sheet{position:sticky;top:52px;height:calc(100vh - 52px);inset:auto;z-index:1}
   #sheet.hide{display:block!important}
   #sheet.idle .sh-top,#sheet.idle .sh-body{display:none}
-  #sheet.idle::before{content:"Choose a lead to see the details, call or update it.";display:block;margin:30vh auto 0;max-width:260px;text-align:center;color:var(--faint)}
+  #sheet.idle::before{content:"Choose a lead or an order to see the details.";display:block;margin:30vh auto 0;max-width:260px;text-align:center;color:var(--faint)}
   .sh-top .back{display:none}
   .pane.wide{grid-column:2/4;border-right:0}
   .kpis{grid-template-columns:repeat(4,1fr)}
@@ -272,6 +297,7 @@ body.partner #out{display:inline-flex!important}
         <button data-t="today" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span>To do</span><span class="badge hide" id="bdg"></span></button>
         <button data-t="leads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>All leads</span></button>
         <button data-t="deals"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg><span class="mob-only">Quotes</span><span class="desk-only">Quotes &amp; samples</span></button>
+        <button data-t="orders"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7L12 12l8.7-5M12 22V12"/></svg><span>Orders</span><span class="badge hide" id="bdg2"></span></button>
         <button data-t="reports"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg><span>Reports</span></button>
       </nav>
     </div>
@@ -383,7 +409,8 @@ async function load(silent){
   try{
     var r=await Promise.all([api('leads?select=*&order=created_at.desc&limit=2000'),S.partner?[]:api('quotes?select=*&order=created_at.desc&limit=1000'),S.partner?[]:api('samples?select=*&order=created_at.desc&limit=1000')]);
     S.leads=r[0];S.quotes=r[1];S.samples=r[2];S.synced=Date.now();
-    if(!S.team.length&&!S.partner){try{S.team=(await api('team?select=name,email&order=name.asc'))||[]}catch(e){S.team=[]}}
+    if(G.O){try{await G.O.load()}catch(e){/* orders not set up yet */}}
+    if(!S.team.length&&!S.partner){try{S.team=(await api('team?select=name,email,role&order=name.asc'))||[]}catch(e){S.team=[]}}
     render(silent);
   }finally{loading=false}
 }
@@ -442,10 +469,11 @@ function render(silent){
   syncLabel();
   var bad=S.leads.filter(function(l){return missedOpen(l)||dueOpen(l)}).length;
   var b=$('bdg');b.textContent=bad;b.classList.toggle('hide',!bad);
+  var ob=G.O?G.O.stuckCount():0,b2=$('bdg2');b2.textContent=ob;b2.classList.toggle('hide',!ob);
   document.querySelectorAll('.nav button').forEach(function(t){if(t.dataset.t===S.tab)t.setAttribute('aria-current','page');else t.removeAttribute('aria-current')});
   $('pane').classList.toggle('wide',S.tab==='reports');
   $('sheet').style.display=S.tab==='reports'&&isDesk()?'none':'';
-  if(silent&&S.tab==='leads'&&$('q')){drawLeadList()}else({today:vToday,leads:vLeads,deals:vDeals,reports:vReports})[S.tab]();
+  if(silent&&S.tab==='leads'&&$('q')){drawLeadList()}else({today:vToday,leads:vLeads,deals:vDeals,reports:vReports,orders:function(){if(G.vOrders)G.vOrders();else $('pane').innerHTML='<div class="empty">Loading orders...</div>'}})[S.tab]();
   if(cur){var a=document.activeElement,typing=a&&$('sheet').contains(a)&&/INPUT|TEXTAREA|SELECT/.test(a.tagName);if(!silent||(!typing&&!(silent==='bg'&&cur.type!=='lead')))reopen()}
 }
 document.querySelectorAll('.nav button').forEach(function(t){t.onclick=function(){S.tab=t.dataset.t;S.limit=60;if(isDesk()&&S.sel&&S.tab==='reports'){}render();window.scrollTo(0,0)}});
@@ -578,7 +606,7 @@ function closeSheet(fromPop){
 window.addEventListener('popstate',function(){if(!$('sheet').classList.contains('hide')&&!isDesk())closeSheet(true)});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&cur)closeSheet()});
 var keepDraft=true;
-function reopen(){if(!cur)return;var sc=$('sheet').scrollTop;var draft={};if(cur.type==='lead'&&keepDraft)$('sheet').querySelectorAll('[id^="f_"],#d_note').forEach(function(e){if('value' in e&&e.tagName!=='BUTTON')draft[e.id]=e.value});
+function reopen(){if(!cur||cur.type==='neworder')return;if(cur.type==='order'){if(G.openOrder)G.openOrder(cur.id,true);return}var sc=$('sheet').scrollTop;var draft={};if(cur.type==='lead'&&keepDraft)$('sheet').querySelectorAll('[id^="f_"],#d_note').forEach(function(e){if('value' in e&&e.tagName!=='BUTTON')draft[e.id]=e.value});
   if(cur.type==='lead'){openLead(cur.id,true);Object.keys(draft).forEach(function(k){var e=$(k);if(e)e.value=draft[k]});var cs=$('f_crop');if(cs)$('f_crop2').classList.toggle('hide',cs.value!=='__other')}else if(cur.type==='quote')openQuote(cur.id,true);else openSample(cur.id,true);$('sheet').scrollTop=sc}
 function head(t,sub){return '<div class="sh-top"><button class="iconbtn back" data-close aria-label="Back">'+IC.back+'</button><div class="ttl"><b>'+esc(t)+'</b><small>'+sub+'</small></div><button class="iconbtn" data-close aria-label="Close">'+IC.x+'</button></div>'}
 function opts(a,v){return a.map(function(s){return '<option'+(s===v?' selected':'')+'>'+s+'</option>'}).join('')}
@@ -673,6 +701,7 @@ function openLead(id,keep){
   +'<div class="box"><h3>Next follow-up</h3><div class="fu-now'+(isOpen(l)&&n!=null&&n<0?' red':'')+'">'+(l.next_followup?esc(fuText(l.next_followup))+(n!=null&&Math.abs(n)>1?'':'')+' <span style="color:var(--faint);font-weight:400">('+esc(fd(l.next_followup))+')</span>':'No follow-up set')+'</div>'
   +'<div class="seg" id="fu"><button data-d="0">Today</button><button data-d="1">Tomorrow</button><button data-d="3">In 3 days</button><button data-d="7">Next week</button>'+(l.next_followup?'<button data-d="x">Clear</button>':'')+'</div>'
   +'<div class="inline"><label class="sr" for="d_next">Pick a date</label><input id="d_next" type="date" value="'+dtv(l.next_followup)+'"></div></div>'
+  +(G.leadOrdersBox?G.leadOrdersBox(l):'')
   +farmBox(l)
   +'<div class="box"><h3>Priority<span class="team-only"> and owner</span></h3><div class="seg" id="pri">'+['Hot','Warm','Cold'].map(function(p){return '<button class="p-'+p+'" data-v="'+p+'" aria-pressed="'+(l.priority===p)+'">'+p+'</button>'}).join('')+'</div>'
   +'<div class="inline team-only">'+(names.length?'<label class="sr" for="d_owner">Owner</label><select id="d_owner"><option value="">Unassigned</option>'+names.map(function(x){return '<option'+(l.owner===x?' selected':'')+'>'+esc(x)+'</option>'}).join('')+'</select>':'<input id="d_owner" placeholder="Owner name" value="'+esc(l.owner||'')+'">')
@@ -691,6 +720,7 @@ function openLead(id,keep){
   if(!keep)$('sheet').scrollTop=0;
   if(CACHE.wa[id])$('d_wa').innerHTML=CACHE.wa[id];if(CACHE.calls[id])$('d_calls').innerHTML=CACHE.calls[id];
   if(!keep||!CACHE.wa[id]){if(l.call_count)loadCalls(id);loadWA(id)}
+  if(G.bindLeadOrders)G.bindLeadOrders(l);
   $('stg').querySelectorAll('button').forEach(function(b){b.onclick=function(){if(l.stage===b.dataset.v)return;if(needsGate(l,b.dataset.v))return gate(l,b.dataset.v);var body={stage:b.dataset.v};if(CLOSED.indexOf(b.dataset.v)>=0)body.next_followup=null;upd(l,body,'Moved to '+b.dataset.v)}});
   $('fu').querySelectorAll('button').forEach(function(b){b.onclick=function(){var d=b.dataset.d;if(d==='x')return upd(l,{next_followup:null},'Follow-up cleared');var t=today0();t.setDate(t.getDate()+(+d));upd(l,{next_followup:dkey(t)},'Follow-up: '+fuText(dkey(t)))}});
   $('d_next').onchange=function(){if(this.value)upd(l,{next_followup:this.value},'Follow-up: '+fuText(this.value))};
@@ -761,8 +791,13 @@ function openSample(id,keep){
   };
 }
 
-/* ---- boot ---- */
-(function(){
+/* ---- shared with orders.js ---- */
+var G=window.GBO={$:$,esc:esc,api:api,toast:toast,IC:IC,ls:ls,S:S,dkey:dkey,digits:digits,waNum:waNum,fd:fd,fdt:fdt,facts:facts,head:head,sheetOpen:sheetOpen,isB2B:isB2B,
+  SB:SB,KEY:KEY,tok:function(){return tok},refresh:refresh,render:render,load:load,openLead:openLead,
+  setCur:function(c){cur=c},isCur:function(t,id){return !!cur&&cur.type===t&&cur.id===id}};
+
+/* ---- boot (after orders.js has loaded) ---- */
+window.addEventListener('DOMContentLoaded',function(){
   var h=new URLSearchParams(location.hash.slice(1));
   if(h.get('access_token')||h.get('error')){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}
   if(h.get('access_token')&&h.get('type')==='recovery'){
@@ -772,8 +807,9 @@ function openSample(id,keep){
   if(h.get('error')){$('login').classList.remove('hide');showForm('ff','Reset password');$('ferr').textContent=/expired|invalid/i.test(h.get('error_description')||h.get('error_code')||'')?'That link has expired or was already used. Send a new one below.':(h.get('error_description')||'That link did not work. Send a new one below.');return}
   if(ls('gbo_at')&&+ls('gbo_exp')>Date.now())tok=ls('gbo_at');
   if(ls('gbo_rt'))start();else $('login').classList.remove('hide');
-})();
+});
 })();
 </script>
+<script src="/team/orders.js?v=1"></script>
 </body>
 </html>
