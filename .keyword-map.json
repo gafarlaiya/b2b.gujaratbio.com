@@ -2198,6 +2198,26 @@
   "audience": "Brand owners, distributors"
  },
  {
+  "path": "/resources/sodium-humate-fco-risk-for-biostimulant-brands",
+  "primary": "sodium humate FCO biostimulant",
+  "secondary": [
+   "sodium humate vs potassium humate",
+   "imported sodium humate India",
+   "humic acid FCO specification potassium humate",
+   "non-standard biostimulant penalty",
+   "potassium humate manufacturer India"
+  ],
+  "questions": [
+   "Is sodium humate allowed as a biostimulant under FCO?",
+   "What is the penalty for selling a non-standard biostimulant?",
+   "How can I tell if my humic is sodium humate or potassium humate?",
+   "Does one spray of sodium humate damage the crop?",
+   "Can I switch my brand from sodium humate to potassium humate?"
+  ],
+  "intent": "Informational",
+  "audience": "Biostimulant brand owners, marketers, OEM buyers and importers"
+ },
+ {
   "path": "/resources/mango-pre-flowering-dealer-planning",
   "primary": "mango pre-flowering planning for dealers",
   "secondary": [
