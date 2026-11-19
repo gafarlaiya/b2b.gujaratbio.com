@@ -1757,6 +1757,27 @@
   "audience": "Dealers, distributors, brand owners, importers"
  },
  {
+  "path": "/gardening-biostimulants-manufacturer",
+  "primary": "gardening biostimulant manufacturer",
+  "secondary": [
+   "seaweed fertilizer manufacturer",
+   "organic gardening fertilizer private label",
+   "home gardening plant food manufacturer india",
+   "garden fertilizer private label",
+   "seaweed fertilizer for plants bulk"
+  ],
+  "questions": [
+   "Do you make seaweed fertilizer for home gardening brands?",
+   "Can I sell your gardening products under my own brand?",
+   "Which products suit organic gardening and kitchen gardens?",
+   "What is the difference between homemade fertilizer and a ready garden biostimulant?",
+   "What pack sizes do you supply for garden retail?",
+   "How long does an order take?"
+  ],
+  "intent": "Commercial",
+  "audience": "Garden brands, nurseries, online plant stores"
+ },
+ {
   "path": "/bulk-pricing-and-quotes",
   "primary": "bulk fertilizer price india",
   "secondary": [
