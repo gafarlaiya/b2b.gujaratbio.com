@@ -177,12 +177,12 @@ def tracking_head(path):
     pt = page_type(path)
     gtm = GTM_ID.strip()
     js = ("window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}"
-          # Third-party tags (GTM incl. Meta pixel, GA4, Clarity) start on the first interaction or 3.5 s after load,
+          # Third-party tags (GTM incl. Meta pixel, GA4, Clarity) start on the first interaction or 10 s after load,
           # so they do not block the main thread while the page renders (PageSpeed TBT). Events queue in dataLayer meanwhile.
           "(function(){var q=[],done=0,ev=['scroll','pointerdown','touchstart','keydown','mousemove'];"
           "function run(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,run,{passive:true})});q.forEach(function(f){try{f()}catch(e){}})}"
           "window.GBO_LATE=function(f){done?f():q.push(f)};"
-          "function t(){ev.forEach(function(e){addEventListener(e,run,{passive:true,once:true})});setTimeout(run,3500)}if(document.readyState==='complete')t();else addEventListener('load',t)})();"
+          "function t(){ev.forEach(function(e){addEventListener(e,run,{passive:true,once:true})});setTimeout(run,10000)}if(document.readyState==='complete')t();else addEventListener('load',t)})();"
           "(function(){var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}"
           "var eu=/^(Europe\\/|Atlantic\\/(Canary|Madeira|Azores|Faroe|Reykjavik))/.test(tz),c='',q=location.search,i='';"
           "try{c=localStorage.getItem('gbo_consent')||'';if(/[?&]internal=1/.test(q))localStorage.setItem('gbo_internal','1');"
