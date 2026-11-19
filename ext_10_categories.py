@@ -55,6 +55,32 @@ BUYER_Q = {"/humic-acid-manufacturer-india": (
  'alt="Infographic: why is your humic acid not performing in the field? Five questions every buyer should ask: source, mining and storage, extraction, formulation, and how much active humic you actually apply per acre. Gujarat Bio Organics, Immunity">'
  '<figcaption class="mute">Share or download this checklist.</figcaption></figure></div>')}
 
+BUYER_QT = {"/amino-acid-protein-hydrolysate-manufacturer-india": "Before you buy amino acid: five questions to ask",
+            "/seaweed-extract-manufacturer-india": "Not all seaweed is the same: what decides quality"}
+BUYER_Q["/amino-acid-protein-hydrolysate-manufacturer-india"] = (
+ '<div class="split"><div class="prose">'
+ '<p>Two products can both say "amino acid 40%" and behave very differently in the field. These are the five questions we suggest every buyer asks any supplier, including us.</p>'
+ '<h3>1. What is the true source?</h3><p>Amino acids can come from plant proteins such as soy, or from other protein sources. Ask for the raw material in writing. In India, the Fertiliser Control Order notifies each biostimulant by its source, and approvals for several animal-based products were withdrawn in 2026, so the source also decides whether a product can be sold.</p>'
+ '<h3>2. How was it produced?</h3><p>Proteins are broken down by enzymes or by acid or alkali hydrolysis. Enzymatic hydrolysis is gentler; harsh acid hydrolysis at high temperature can damage some amino acids. Ask which process was used.</p>'
+ '<h3>3. What else comes with the amino acids?</h3><p>A hydrolysate also carries peptides, minerals and other natural compounds. Free amino acids and short peptides are what the plant uses quickly; ask for the free amino acid figure, not only the total.</p>'
+ '<h3>4. How was it formulated?</h3><p>Stability, pH and compatibility with the fertilizers and sprays it will be mixed with decide what reaches the crop. Ask for the shelf life and compatibility notes.</p>'
+ '<h3>5. Is the application rate adequate?</h3><p>Compare how much active amino acid each acre actually receives at the label dose, not only the price per litre.</p>'
+ '<p>See <a href="/resources/protein-hydrolysate-vs-amino-acid">protein hydrolysate vs amino acid</a>, or send us the grade and quantity you are comparing and we will share our specification.</p>'
+ '</div><figure class="fig"><img src="/assets/img/amino-acid-5-questions.webp" width="793" height="1983" loading="lazy" '
+ 'alt="Infographic: before you buy amino acid, ask these five questions: the true source, how it was produced, what else comes with the amino acids, how it was formulated, and whether the application rate is adequate">'
+ '<figcaption class="mute">Share or download this checklist.</figcaption></figure></div>')
+BUYER_Q["/seaweed-extract-manufacturer-india"] = (
+ '<div class="split"><div class="prose">'
+ '<p>Thousands of seaweed species grow in the world\'s oceans, and extracts made from them are not interchangeable. Five things decide what a seaweed extract does in the field.</p>'
+ '<h3>1. The right species</h3><p>Brown seaweeds such as Ascophyllum and Sargassum and red seaweeds such as Kappaphycus have different chemistry. See <a href="/resources/kappaphycus-vs-ascophyllum-vs-sargassum">Kappaphycus vs Ascophyllum vs Sargassum</a>.</p>'
+ '<h3>2. The right harvest</h3><p>Season, location and how quickly the seaweed is handled after harvest change the raw material.</p>'
+ '<h3>3. The right extraction</h3><p>Low-temperature and gentler processes preserve more of the sensitive compounds than harsh, hot treatment. See <a href="/resources/seaweed-extraction-methods-compared">seaweed extraction methods compared</a>.</p>'
+ '<h3>4. The right formulation</h3><p>Stabilising the extract, and combining it correctly with other inputs, decides its shelf life and compatibility.</p>'
+ '<h3>5. The right quality control</h3><p>Ask for a test report for each batch. See <a href="/resources/seaweed-extract-test-report-guide">how to read a seaweed extract test report</a>.</p>'
+ '</div><figure class="fig"><img src="/assets/img/seaweed-not-all-the-same.webp" width="847" height="1857" loading="lazy" '
+ 'alt="Infographic: not all seaweed is the same. Right species, right harvest, right extraction, right formulation and right quality control decide agricultural performance. Gujarat Bio Organics">'
+ '<figcaption class="mute">Share or download this infographic.</figcaption></figure></div>')
+
 def cat_page(d):
     p = d["path"]
     body = hero(d["h1"], d["lead"], [("Products", "/products"), (d["crumb"], None)])
@@ -71,7 +97,7 @@ def cat_page(d):
     if d.get("what"):
         body += sec(f'<div class="prose">{d["what"]}</div>', d.get("what_title", "How it works"), cls="tint")
     if p in BUYER_Q:
-        body += sec(BUYER_Q[p], "Humic acid not performing in the field? Five questions to ask before you buy")
+        body += sec(BUYER_Q[p], BUYER_QT.get(p, "Humic acid not performing in the field? Five questions to ask before you buy"))
     if d.get("uses"):
         body += sec(table(d["uses_head"], d["uses"]) + CLAIM_NOTE, d.get("uses_title", "Where it is used"))
     if d.get("methods"):

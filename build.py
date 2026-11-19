@@ -202,7 +202,15 @@ def tracking_noscript():
     g = GTM_ID.strip()
     return f'<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={g}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>' if g else ""
 
+_FIG = {"/about": ("gbo-20-years-experience.webp", 768, 2048, "Twenty years of experience", "Infographic: Gujarat Bio Organics, 20+ years of expertise and experience in organic and biological agricultural inputs, made in Gujarat, India"),
+        "/bulk-supply": ("gbo-b2b-supply.webp", 724, 2172, "Our B2B product segments at a glance", "Infographic: Gujarat Bio Organics B2B supply for dealers, distributors, brand owners, bulk buyers and export partners: biostimulants, organic fertilizers, biofertilizers, humic and fulvic, seaweed extracts, amino acids, botanical inputs, in powder, liquid and granules")}
+def _fig_sec(path):
+    f, w, h, t, alt = _FIG[path]
+    return (f'<section class="sec"><div class="wrap"><h2>{t}</h2><figure class="fig" style="max-width:560px;margin:0 auto">'
+            f'<img src="/assets/img/{f}" width="{w}" height="{h}" loading="lazy" alt="{esc(alt)}"><figcaption class="mute">Share or download this infographic.</figcaption></figure></div></section>')
 def render(path, title, desc, body, schemas=None, crumb=None, noindex=False, og_img="/assets/img/private-label-premium-enriched.webp"):
+    if path in _FIG:
+        _j = body.rfind("<section"); body = body[:_j] + _fig_sec(path) + body[_j:] if _j > 0 else body + _fig_sec(path)
     url = SITE + (path if path != "/" else "/")
     ld = [org_ld()] if path == "/" else []
     if path == "/":
