@@ -208,12 +208,15 @@ _FIG = {"/about": ("gbo-20-years-experience.webp", 768, 2048, "Twenty years of e
         "/bulk-supply": ("gbo-b2b-supply.webp", 724, 2172, "Our B2B product segments at a glance", "Infographic: Gujarat Bio Organics B2B supply for dealers, distributors, brand owners, bulk buyers and export partners: biostimulants, organic fertilizers, biofertilizers, humic and fulvic, seaweed extracts, amino acids, botanical inputs, in powder, liquid and granules")}
 for _s in ("humates-12-5-liquid", "humic-acid-5-powder", "potassium-humate-49-powder", "sargassum-tenerrimum-2-granular", "protein-hydrolysate-plant-source-1-5",
            "acetobacter-biofertiliser", "azospirillum-biofertiliser", "phosphate-solubilising-bacteria", "potash-mobilising-bacteria", "zinc-solubilising-bacteria",
-           "mycorrhizal-biofertiliser", "liquid-consortia-npk-biofertiliser"):
+           "mycorrhizal-biofertiliser", "liquid-consortia-npk-biofertiliser",
+           "ascophyllum-nodosum-15-liquid", "kappaphycus-alvarezii-24-liquid", "sargassum-tenerrimum-10-liquid", "humic-acid-51-granular", "amino-acid-20"):
     from PIL import Image as _PI0
     _w, _h = _PI0.open(os.path.join(ROOT, "assets", "img", f"sheet-{_s}.webp")).size
     _nm = _s.replace("-", " ").replace(" 12 5", " 12.5").replace(" 1 5", " 1.5")
     _FIG[f"/products/{_s}"] = (f"sheet-{_s}.webp", _w, _h, "Product sheet", f"Product sheet for {_nm}: form, features, applications, suitable crops, specification, packaging and private-label availability, Gujarat Bio Organics",
         "<p>One-page summary for buyers and dealers. Confirm the specification and batch analysis with us before you order.</p>")
+_FIG["/private-label-zyme-granules"] = ("sheet-zyme-granules.webp", 1024, 1536, "Zyme granules: product sheet", "Product sheet: Zyme granules, enzyme enriched algal granules for soil basal broadcasting, nursery beds and fertilizer mixing, in 5 kg, 10 kg and 25 kg packs, available for private label", "<p>Zyme granules are available in 5 kg bags, 10 kg buckets and 25 kg HDPE bags, under your own brand. Ask for the specification and batch analysis before you order.</p>")
+_FIG["/seaweed-extract-granules-manufacturer-india"] = ("sheet-seaweed-granules-retail.webp", 1024, 1536, "Retail pack: seaweed granules 2 kg", "Product sheet: seaweed granules 2 kg retail farmer pack, 2.0% minimum algal extract, for soil broadcasting, ring application and nursery beds, available for private label", "<p>A ready retail format for dealers: 2 kg pouches, 10 per carton, also available in your own brand.</p>")
 def _fig_sec(path):
     f, w, h, t, alt = _FIG[path][:5]; txt = _FIG[path][5] if len(_FIG[path]) > 5 else ""
     return (f'<section class="sec"><div class="wrap"><h2>{t}</h2>{txt}<figure class="fig" style="max-width:560px;margin:0 auto">'

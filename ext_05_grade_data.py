@@ -123,6 +123,7 @@ GRADE_IMG_MAP = {
  "Humate and fulvates 22%|Liquid": "humates-fulvates-22-liquid", "Humic and fulvic acid 25.05%|Liquid": "humic-fulvic-25-liquid",
  "Seaweed + humic and fulvic acid + amino acids + vitamins|Liquid": "seaweed-humic-amino-vitamins-liquid",
  "Protein hydrolysate, plant source 16.9%|" + LAF: "ph-plant-16-9-liquid", "Protein hydrolysate, plant source 25%|" + LAF: "ph-plant-25-liquid",
+ "Humic acid + seaweed extract|Liquid": "humic-seaweed-liquid-premium",
 }
 
 # ---- biofertilisers
