@@ -130,7 +130,7 @@ def footer():
 <div><h2 class="fh">Knowledge</h2><ul><li><a href="/resources">Knowledge centre</a></li><li><a href="/crops">Crop programmes</a></li><li><a href="/field-solutions">Field solutions</a></li><li><a href="/fco-schedule-vi-biostimulants">FCO Schedule VI</a></li><li><a href="/glossary">Glossary</a></li><li><a href="/faq">FAQ</a></li><li><a href="/resources/what-is-a-biostimulant">What is a biostimulant</a></li><li><a href="/resources/humic-acid-uses-in-agriculture">Humic acid uses</a></li><li><a href="/resources/seaweed-extract-uses-in-agriculture">Seaweed extract uses</a></li><li><a href="/resources/protein-hydrolysate-vs-amino-acid">Protein hydrolysate vs amino acid</a></li><li><a href="/resources/kappaphycus-vs-ascophyllum-vs-sargassum">Kappaphycus vs Ascophyllum vs Sargassum</a></li><li><a href="https://www.gujaratbio.com/plant-science-series" rel="noopener">Plant science series (for growers)</a></li></ul></div>
 <div><h2 class="fh">Talk to us</h2><ul><li><a href="https://wa.me/{WA}">WhatsApp {PHONE}</a></li><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><a href="{FB}" rel="noopener">Facebook</a></li><li><a href="{YT}" rel="noopener">YouTube</a></li></ul></div>
 </div><div class="fbot"><span>&copy; <span id="yr">2026</span> Gujarat Bio Organics Private Limited. This website is owned and maintained by Gujarat Bio Organics Private Limited (CIN {CIN}), biostimulant and organic fertilizer manufacturer, Bhavnagar, Gujarat, India. Our other websites: <a href="https://www.gujaratbio.com/">farmers and Immunity range</a>, <a href="https://ganna.in/">ganna.in (sugarcane)</a>.</span><span>Open B2B site: no login needed. Request a quote or free sample directly. Product images are illustrative samples. <a href="/privacy-policy">Privacy and cookies</a> <button type="button" class="linkbtn" data-cookie-settings>Cookie settings</button></span></div></div></footer>
-<aside aria-label="Chat"><button type="button" class="chat-launch" id="chat-open" aria-controls="chat-panel" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg><span>Ask our sales team</span></button><a class="wa-float" href="https://wa.me/{WA}" aria-label="Chat on WhatsApp">{WA_SVG}<span>WhatsApp us</span></a></aside>'''
+<aside aria-label="Chat"><button type="button" class="chat-launch" id="chat-open" aria-label="Ask our sales team" aria-controls="chat-panel" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg><span>Ask our sales team</span></button><a class="wa-float" href="https://wa.me/{WA}" aria-label="Chat on WhatsApp">{WA_SVG}<span>WhatsApp us</span></a></aside>'''
 
 def cta(title="Tell us what you need. We reply with a quote and a free sample.", sub="No minimum order quantity. Dispatch in about one week.", msg="Hello Gujarat Bio Organics, I would like a quote."):
     return f'''<section class="cta"><div class="wrap"><div><h2>{title}</h2><p>{sub}</p></div>
@@ -177,6 +177,12 @@ def tracking_head(path):
     pt = page_type(path)
     gtm = GTM_ID.strip()
     js = ("window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}"
+          # Third-party tags (GTM incl. Meta pixel, GA4, Clarity) start on the first interaction or 3.5 s after load,
+          # so they do not block the main thread while the page renders (PageSpeed TBT). Events queue in dataLayer meanwhile.
+          "(function(){var q=[],done=0,ev=['scroll','pointerdown','touchstart','keydown','mousemove'];"
+          "function run(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,run,{passive:true})});q.forEach(function(f){try{f()}catch(e){}})}"
+          "window.GBO_LATE=function(f){done?f():q.push(f)};ev.forEach(function(e){addEventListener(e,run,{passive:true,once:true})});"
+          "function t(){setTimeout(run,3500)}if(document.readyState==='complete')t();else addEventListener('load',t)})();"
           "(function(){var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}"
           "var eu=/^(Europe\\/|Atlantic\\/(Canary|Madeira|Azores|Faroe|Reykjavik))/.test(tz),c='',q=location.search,i='';"
           "try{c=localStorage.getItem('gbo_consent')||'';if(/[?&]internal=1/.test(q))localStorage.setItem('gbo_internal','1');"
@@ -189,11 +195,11 @@ def tracking_head(path):
           # Microsoft Clarity (heatmaps + recordings): after page load, only with consent and never for the team.
           "if(v==='granted'&&!i){var cl=function(){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;"
           "t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,'clarity','script','" + CLARITY_ID + "')};"
-          "if(document.readyState==='complete')setTimeout(cl,1);else addEventListener('load',function(){setTimeout(cl,1)})}")
+          "GBO_LATE(cl)}")
     if gtm:
-        js += ("dataLayer.push(p);(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
+        js += ("dataLayer.push(p);GBO_LATE(function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
                "var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f)})"
-               "(window,document,'script','dataLayer','" + gtm + "')})();")
+               "(window,document,'script','dataLayer','" + gtm + "')})})();")
         return "<script>" + js + "</script>"
     js += "gtag('js',new Date());gtag('config','" + GA4_ID + "',p)})();"
     return f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script><script>' + js + "</script>"
