@@ -206,6 +206,14 @@ _FIG = {"/about": ("gbo-20-years-experience.webp", 768, 2048, "Twenty years of e
         "/zyme-granules-manufacturer": ("zyme-liquid.webp", 941, 1672, "Zyme Liquid: the liquid form for foliar and drip", "Product sheet: Zyme Liquid, an enzyme-based liquid biostimulant for foliar spray, drip and fertigation; packs from 250 ml to 200 L; private label and bulk supply available from Gujarat Bio Organics",
             "<p>Zyme is also made as a liquid, for foliar spray, drip and fertigation, in packs from 250 ml to 200 L HDPE. It is available in bulk and under your own brand. Ask for the specification and batch analysis before you order.</p>"),
         "/bulk-supply": ("gbo-b2b-supply.webp", 724, 2172, "Our B2B product segments at a glance", "Infographic: Gujarat Bio Organics B2B supply for dealers, distributors, brand owners, bulk buyers and export partners: biostimulants, organic fertilizers, biofertilizers, humic and fulvic, seaweed extracts, amino acids, botanical inputs, in powder, liquid and granules")}
+for _s in ("humates-12-5-liquid", "humic-acid-5-powder", "potassium-humate-49-powder", "sargassum-tenerrimum-2-granular", "protein-hydrolysate-plant-source-1-5",
+           "acetobacter-biofertiliser", "azospirillum-biofertiliser", "phosphate-solubilising-bacteria", "potash-mobilising-bacteria", "zinc-solubilising-bacteria",
+           "mycorrhizal-biofertiliser", "liquid-consortia-npk-biofertiliser"):
+    from PIL import Image as _PI0
+    _w, _h = _PI0.open(os.path.join(ROOT, "assets", "img", f"sheet-{_s}.webp")).size
+    _nm = _s.replace("-", " ").replace(" 12 5", " 12.5").replace(" 1 5", " 1.5")
+    _FIG[f"/products/{_s}"] = (f"sheet-{_s}.webp", _w, _h, "Product sheet", f"Product sheet for {_nm}: form, features, applications, suitable crops, specification, packaging and private-label availability, Gujarat Bio Organics",
+        "<p>One-page summary for buyers and dealers. Confirm the specification and batch analysis with us before you order.</p>")
 def _fig_sec(path):
     f, w, h, t, alt = _FIG[path][:5]; txt = _FIG[path][5] if len(_FIG[path]) > 5 else ""
     return (f'<section class="sec"><div class="wrap"><h2>{t}</h2>{txt}<figure class="fig" style="max-width:560px;margin:0 auto">'

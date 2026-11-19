@@ -120,6 +120,9 @@ GRADE_IMG_MAP = {
  "Kappaphycus alvarezii 24%|Liquid": "kappaphycus-24-liquid", "Kappaphycus alvarezii 9.5%|Liquid": "kappaphycus-9-5-liquid",
  "Kappaphycus alvarezii 7.2%|Liquid": "kappaphycus-7-2-liquid", "Sargassum tenerrimum 10%|Liquid": "sargassum-10-liquid",
  "Amino acid 20%|" + LAF: "amino-20-liquid", "Humic acid + seaweed extract|Granules": "humic-seaweed-granules",
+ "Humate and fulvates 22%|Liquid": "humates-fulvates-22-liquid", "Humic and fulvic acid 25.05%|Liquid": "humic-fulvic-25-liquid",
+ "Seaweed + humic and fulvic acid + amino acids + vitamins|Liquid": "seaweed-humic-amino-vitamins-liquid",
+ "Protein hydrolysate, plant source 16.9%|" + LAF: "ph-plant-16-9-liquid", "Protein hydrolysate, plant source 25%|" + LAF: "ph-plant-25-liquid",
 }
 
 # ---- biofertilisers
