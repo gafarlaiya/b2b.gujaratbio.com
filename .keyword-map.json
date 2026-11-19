@@ -1740,6 +1740,23 @@
   "audience": "Importers, brand owners, growers"
  },
  {
+  "path": "/events/soms-2026-gandhinagar",
+  "primary": "gujarat bio organics soms 2026",
+  "secondary": [
+   "soms 2026 gandhinagar",
+   "specialty fertilizer expo gandhinagar",
+   "sfia soms expo exhibitor biostimulant"
+  ],
+  "questions": [
+   "What is SOMS?",
+   "Where and when was SOMS 2026?",
+   "I visited the GBO stall. How do I follow up?",
+   "Can I get samples of the granules shown at the stall?"
+  ],
+  "intent": "Trust / brand",
+  "audience": "Dealers, distributors, brand owners, importers"
+ },
+ {
   "path": "/bulk-pricing-and-quotes",
   "primary": "bulk fertilizer price india",
   "secondary": [
