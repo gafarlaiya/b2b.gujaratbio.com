@@ -209,7 +209,7 @@ _FIG = {"/about": ("gbo-20-years-experience.webp", 768, 2048, "Twenty years of e
 for _s in ("humates-12-5-liquid", "humic-acid-5-powder", "potassium-humate-49-powder", "sargassum-tenerrimum-2-granular", "protein-hydrolysate-plant-source-1-5",
            "acetobacter-biofertiliser", "azospirillum-biofertiliser", "phosphate-solubilising-bacteria", "potash-mobilising-bacteria", "zinc-solubilising-bacteria",
            "mycorrhizal-biofertiliser", "liquid-consortia-npk-biofertiliser",
-           "ascophyllum-nodosum-15-liquid", "kappaphycus-alvarezii-24-liquid", "sargassum-tenerrimum-10-liquid", "humic-acid-51-granular", "amino-acid-20"):
+           "ascophyllum-nodosum-15-liquid", "ascophyllum-nodosum-7-liquid", "kappaphycus-alvarezii-9-5-liquid", "kappaphycus-alvarezii-7-2-liquid", "kappaphycus-alvarezii-24-liquid", "sargassum-tenerrimum-10-liquid", "humic-acid-51-granular", "amino-acid-20"):
     from PIL import Image as _PI0
     _w, _h = _PI0.open(os.path.join(ROOT, "assets", "img", f"sheet-{_s}.webp")).size
     _nm = _s.replace("-", " ").replace(" 12 5", " 12.5").replace(" 1 5", " 1.5")
@@ -217,6 +217,11 @@ for _s in ("humates-12-5-liquid", "humic-acid-5-powder", "potassium-humate-49-po
         "<p>One-page summary for buyers and dealers. Confirm the specification and batch analysis with us before you order.</p>")
 _FIG["/private-label-zyme-granules"] = ("sheet-zyme-granules.webp", 1024, 1536, "Zyme granules: product sheet", "Product sheet: Zyme granules, enzyme enriched algal granules for soil basal broadcasting, nursery beds and fertilizer mixing, in 5 kg, 10 kg and 25 kg packs, available for private label", "<p>Zyme granules are available in 5 kg bags, 10 kg buckets and 25 kg HDPE bags, under your own brand. Ask for the specification and batch analysis before you order.</p>")
 _FIG["/seaweed-extract-granules-manufacturer-india"] = ("sheet-seaweed-granules-retail.webp", 1024, 1536, "Retail pack: seaweed granules 2 kg", "Product sheet: seaweed granules 2 kg retail farmer pack, 2.0% minimum algal extract, for soil broadcasting, ring application and nursery beds, available for private label", "<p>A ready retail format for dealers: 2 kg pouches, 10 per carton, also available in your own brand.</p>")
+_FIG["/granular-biostimulants-manufacturer-india"] = ("sheet-zyme-granules-roasted.webp", 941, 1672, "Zyme granules (roasted): product sheet", "Product sheet: roasted Zyme granules, enzyme enriched algal granules for basal broadcasting, nursery beds and fertilizer mixing, 5 to 25 kg packs, available for private label", "<p>Roasted Zyme granules in 5 kg bags, 10 kg buckets and 25 kg HDPE bags, available in bulk or under your brand.</p>")
+_FIG["/why-gujarat-bio"] = ("gbo-promise.webp", 1024, 1536, "The GBO promise", "Infographic: the Gujarat Bio Organics promise to every farmer and partner: research, quality, sustainability and support, with our commitment never to compromise on quality")
+_FIG["/impact"] = ("gbo-our-promise.webp", 885, 1778, "Our promise to partners", "Infographic: Gujarat Bio Organics, our promise and commitment to partners and farmers, with crop examples for mango, cotton and vegetables; farmer experiences differ")
+_FIG["/humic-acid-granules-manufacturer-india"] = ("active-humic-granules.webp", 768, 2048, "Is your humic granule really active?", "Infographic: what to watch for when buying humic granules: low active content, harsh processing, fillers and binders; demand proof with a lab report of active humic and fulvic acid",
+    "<p>Not every black granule carries active humic acid. Before you buy any humic granule, from us or anyone, ask for the active humic acid % on a dry basis, the humic and fulvic profile, solubility and pH, and the source and process, backed by a lab report for your batch.</p>")
 def _fig_sec(path):
     f, w, h, t, alt = _FIG[path][:5]; txt = _FIG[path][5] if len(_FIG[path]) > 5 else ""
     return (f'<section class="sec"><div class="wrap"><h2>{t}</h2>{txt}<figure class="fig" style="max-width:560px;margin:0 auto">'
