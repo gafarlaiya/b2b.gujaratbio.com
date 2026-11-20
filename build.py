@@ -115,14 +115,14 @@ def crumbs_ld(path, title):
 def header(path):
     links = "".join(f'<a href="{u}"' + (' aria-current="page"' if path == u else '') + f'>{t}</a>' for u, t in NAV)
     return f'''<a class="skip" href="#main">Skip to content</a>
-<header class="site-header"><div class="wrap hdr">
+<header class="site-header"><div class="wrap hdr" data-nosnippet>
 <a class="brand" href="/">{LOGO}<span>Gujarat Bio Organics<small>Organic fertilizers, biostimulants, biofertilisers</small></span></a>
 <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
 <nav class="nav" id="nav" aria-label="Main">{links}<a class="btn btn-primary" href="/contact">Request a quote</a></nav>
 </div></header>'''
 
 def footer():
-    return f'''<footer class="site-footer"><div class="wrap"><div class="fgrid">
+    return f'''<footer class="site-footer"><div class="wrap" data-nosnippet><div class="fgrid">
 <div><h2 class="fh">{NAME}</h2><address>Factory: {FACTORY}<br><br>Registered office: {REGOFF}</address>
 <p style="margin-top:1rem">CIN {CIN}<br>GSTIN {GST}</p></div>
 <div><h2 class="fh">Products</h2><ul><li><a href="/organic-fertilizer-manufacturer-india">Organic fertilizers</a></li><li><a href="/biostimulants-manufacturer-india">Biostimulants</a></li><li><a href="/humic-acid-manufacturer-india">Humic acid</a></li><li><a href="/seaweed-extract-manufacturer-india">Seaweed extract</a></li><li><a href="/amino-acid-protein-hydrolysate-manufacturer-india">Amino acids</a></li><li><a href="/biofertilisers-manufacturer-india">Biofertilisers</a></li><li><a href="/micronutrient-fertilizer-manufacturer-india">Micronutrients</a></li><li><a href="/water-soluble-fertilizer-special-grades">Special grades</a></li><li><a href="/slow-release-fertilizer">Slow release</a></li><li><a href="/granular-biostimulants-manufacturer-india">Biostimulant granules</a></li><li><a href="/humic-acid-granules-manufacturer-india">Humic acid granules</a></li><li><a href="/seaweed-extract-granules-manufacturer-india">Seaweed granules</a></li><li><a href="/amino-acid-granules-manufacturer-india">Amino acid granules</a></li><li><a href="/zyme-granules-manufacturer">Zyme granules</a></li><li><a href="/custom-fertilizer-blends">Custom blends</a></li><li><a href="/crop-specific-fertilizers">Crop-specific</a></li><li><a href="/biostimulant-formulations">Biostimulant formulations</a></li><li><a href="/start-biostimulant-business-india">Start a biostimulant business</a></li><li><a href="/gardening-biostimulants-manufacturer">Gardening biostimulants</a></li></ul></div>
