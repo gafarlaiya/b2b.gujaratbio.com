@@ -6,7 +6,7 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 
 const db = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
 const TOPIC = Deno.env.get("ORDER_TOPIC") ?? Deno.env.get("NTFY_TOPIC") ?? "gbo-leads-8ce1a43568f8a8c4";
-const DASH = "https://b2b.gujaratbio.com/team/";
+const DASH = "https://gbo.bagban.in/";
 const DAY = 24 * 3600e3;
 const rs = (n: number) => "Rs " + Math.round(+n || 0).toLocaleString("en-IN");
 const json = (o: unknown) => new Response(JSON.stringify(o), { headers: { "Content-Type": "application/json" } });
