@@ -1257,7 +1257,7 @@
  },
  {
   "path": "/products/carrier-based-consortia-biofertiliser",
-  "primary": "carrier-based consortia biofertilizer",
+  "primary": "npk consortia biofertilizer",
   "secondary": [
    "carrier-based consortia biofertilizer manufacturer",
    "carrier-based consortia uses",
@@ -1299,7 +1299,7 @@
  },
  {
   "path": "/products/liquid-consortia-npk-biofertiliser",
-  "primary": "liquid consortia biofertilizer",
+  "primary": "liquid npk consortia biofertilizer",
   "secondary": [
    "liquid consortia biofertilizer manufacturer",
    "liquid consortia uses",
@@ -1320,7 +1320,7 @@
  },
  {
   "path": "/products/mycorrhizal-biofertiliser",
-  "primary": "mycorrhizal biofertilisers biofertilizer",
+  "primary": "mycorrhiza biofertilizer (vam)",
   "secondary": [
    "mycorrhizal biofertilisers biofertilizer manufacturer",
    "mycorrhizal biofertilisers uses",
@@ -1341,7 +1341,7 @@
  },
  {
   "path": "/products/phosphate-solubilising-bacteria",
-  "primary": "phosphate solubilising bacteria biofertilizer",
+  "primary": "psb biofertilizer",
   "secondary": [
    "phosphate solubilising bacteria biofertilizer manufacturer",
    "phosphate solubilising bacteria uses",
@@ -1362,7 +1362,7 @@
  },
  {
   "path": "/products/potash-mobilising-bacteria",
-  "primary": "potash mobilising bacteria biofertilizer",
+  "primary": "kmb / ksb biofertilizer",
   "secondary": [
    "potash mobilising bacteria biofertilizer manufacturer",
    "potash mobilising bacteria uses",
@@ -1425,7 +1425,7 @@
  },
  {
   "path": "/products/zinc-solubilising-bacteria",
-  "primary": "zinc solubilising bacteria biofertilizer",
+  "primary": "zinc solubilizing bacteria (zsb)",
   "secondary": [
    "zinc solubilising bacteria biofertilizer manufacturer",
    "zinc solubilising bacteria uses",
@@ -1446,7 +1446,7 @@
  },
  {
   "path": "/products/phosphate-solubilising-fungi",
-  "primary": "phosphate solubilising fungal biofertilisers biofertilizer",
+  "primary": "phosphate solubilizing fungi",
   "secondary": [
    "phosphate solubilising fungal biofertilisers biofertilizer manufacturer",
    "phosphate solubilising fungal biofertilisers uses",

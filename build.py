@@ -104,7 +104,7 @@ def org_ld():
                            "FCO Schedule VI", "Private label fertilizer manufacturing"],
             "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "telephone": "+919978791167",
                               "email": MAIL, "availableLanguage": ["English", "Hindi", "Gujarati"]}],
-            "sameAs": [FB, YT]}
+            "sameAs": [FB, YT, "https://www.gujaratbio.com/", "https://maps.app.goo.gl/5P9fgnkZU6PUS7Zw9"]}
 
 def crumbs_ld(path, title):
     items = [("Home", "/")]
@@ -233,6 +233,8 @@ def _fig_sec(path):
     return (f'<section class="sec"><div class="wrap"><h2>{t}</h2>{txt}<figure class="fig" style="max-width:560px;margin:0 auto">'
             f'<img src="/assets/img/{f}" width="{w}" height="{h}" loading="lazy" alt="{esc(alt)}"><figcaption class="mute">Share or download this infographic.</figcaption></figure></div></section>')
 def render(path, title, desc, body, schemas=None, crumb=None, noindex=False, og_img="/assets/img/private-label-premium-enriched.webp"):
+    _seo = globals().get("SEO")
+    if _seo and path in _seo: title, desc = _seo[path]
     if path in _FIG:
         _j = body.rfind("<section"); body = body[:_j] + _fig_sec(path) + body[_j:] if _j > 0 else body + _fig_sec(path)
     url = SITE + (path if path != "/" else "/")
