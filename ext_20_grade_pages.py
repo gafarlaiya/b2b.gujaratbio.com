@@ -55,6 +55,8 @@ for g, n, f in GRADES:
     su = SHORT_USES[g]
     desc = next(d for d in (f"{n} ({fw}) uses: {su}. How to apply, FCO Schedule VI status, bulk and private-label supply from Gujarat.",
                             f"{tname}{ft_t} uses: {su}. How to apply, FCO grade, bulk and private-label supply from Gujarat.",
+                            f"{tname}{ft_t} uses: {su}. FCO grade, bulk and private label from Gujarat.",
+                            f"{tname}{ft_t}: {su}. Bulk and private label from Gujarat.",
                             f"{tname} uses: {su}. How to apply, FCO grade, bulk and private label from Gujarat.",
                             f"{tname}: uses, how to apply, FCO Schedule VI grade. Bulk and private label from Gujarat.") if len(d) <= 158 or d.startswith(f"{tname}: uses, how"))
     page(p, title, desc, body, trail, [faq_ld(faq)], "0.7",
