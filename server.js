@@ -132,7 +132,7 @@ function send(res, code, file, extra, req) {
   fs.readFile(file, (e, buf) => {
     if (e) { res.writeHead(500); return res.end('Server error'); }
     const ext = path.extname(file);
-    const h = Object.assign({'Content-Type': MIME[ext] || 'application/octet-stream', 'X-Content-Type-Options': 'nosniff', 'Vary': 'Accept-Encoding'}, extra || {});
+    const h = Object.assign({'Content-Type': MIME[ext] || 'application/octet-stream', 'X-Content-Type-Options': 'nosniff', 'Vary': 'Accept-Encoding', 'Strict-Transport-Security': 'max-age=31536000', 'X-Frame-Options': 'SAMEORIGIN', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Permissions-Policy': 'camera=(), microphone=(), geolocation=()'}, extra || {});
     h['Cache-Control'] = ext === '.html' ? 'public, max-age=300' : (ext === '.css' || ext === '.js') ? 'public, max-age=31536000, immutable' : 'public, max-age=31536000, immutable';
     const textual = /^(\.html|\.css|\.js|\.svg|\.xml|\.txt|\.json)$/.test(ext);
     if (textual && req && /\bgzip\b/.test(req.headers['accept-encoding'] || '')) {
