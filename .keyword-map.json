@@ -1800,18 +1800,23 @@
   "path": "/resources/what-is-a-biostimulant",
   "primary": "what is a biostimulant",
   "secondary": [
+   "biostimulant",
+   "biostimulants",
    "biostimulant meaning",
    "biostimulant meaning in hindi",
-   "biostimulant products in agriculture",
    "types of biostimulants",
    "biostimulant examples",
-   "biostimulant fertilizer"
+   "biostimulants in india",
+   "fco schedule vi biostimulant categories"
   ],
   "questions": [
    "What is the difference between a biostimulant and a fertilizer?",
+   "Can biostimulants replace fertilizers?",
    "What is the difference between a biostimulant and a biofertilizer?",
    "Is a biostimulant a plant growth regulator?",
-   "What are examples of biostimulants?",
+   "What are the types of biostimulants in India?",
+   "Is humic acid a biostimulant?",
+   "How many biostimulants are approved in India?",
    "What is biostimulant in Hindi?"
   ],
   "intent": "Informational",
